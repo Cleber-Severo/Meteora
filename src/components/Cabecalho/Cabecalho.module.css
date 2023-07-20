@@ -1,0 +1,24 @@
+.container__nav, .list, .list__menu{
+    display: flex;
+}
+
+.container__nav {
+    background-color: #000000;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    height: 58px;
+}
+
+.list, .list__menu {
+    gap: 1.2rem;
+    list-style: none;
+}
+
+.list__menu {
+    color: white;
+}
+
