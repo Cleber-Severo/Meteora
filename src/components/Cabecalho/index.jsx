@@ -9,7 +9,6 @@ function Cabecalho() {
           <li >
             <div className={styles.logo}></div>
           </li>
-          <li>Meteora</li>
           <li>Home</li>
           <li>Nossas Lojas</li>
           <li>Novidades</li>
