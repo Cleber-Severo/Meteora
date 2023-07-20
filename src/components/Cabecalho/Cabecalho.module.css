@@ -15,6 +15,13 @@
   height: 58px;
 }
 
+.logo {
+  background-image: url("./logo-desktop.png");
+  background-size: contain;
+  width: 132.75px;
+  height: 32px;
+}
+
 .list,
 .list__menu {
   align-items: center;
@@ -24,6 +31,10 @@
 
 .list__menu {
   color: white;
+}
+
+.list__menu li:hover {
+    cursor: pointer;
 }
 
 .search,
