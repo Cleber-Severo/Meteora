@@ -13,8 +13,8 @@ function Cabecalho() {
                 <li>Promoções</li>
             </ul>
             <ul className={styles.list}>
-                <li><input type="text" placeholder='Digite o produto' /></li>
-                <li><button>Buscar</button></li>
+                <li><input className={styles.search} type="text" placeholder='Digite o produto' /></li>
+                <li><button className={styles.btn}>Buscar</button></li>
             </ul>
         </nav>
     </header>
