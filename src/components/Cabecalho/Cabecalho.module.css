@@ -83,6 +83,12 @@
 .btn__mobile {
   display: none;
 }
+
+.rightHeader > img,
+.list__menu li img {
+  display: none;
+}
+
 @media screen and (max-width: 1023px) {
   .logo {
     background-image: url("./logo-tablet.png");
@@ -116,28 +122,32 @@
     background-image: url("./logo-mobile.png");
   }
 
-  
   .container__nav {
     background-color: transparent;
     flex-direction: column;
     padding: 0;
   }
-  
+
   .rightHeader {
     background-color: #000000;
 
     justify-content: space-between;
-    
+
     position: relative;
-    
+
     width: 100%;
 
     padding: 20px 23px;
     box-sizing: border-box;
   }
 
+  .rightHeader > img,
+  .list__menu li img {
+    display: block;
+  }
+
   .list__menu {
-    background-color: #343A40;
+    background-color: #343a40;
 
     align-items: start;
     flex-direction: column;
@@ -151,7 +161,7 @@
 
     box-sizing: border-box;
 
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
 
   .list__menu.opened {
@@ -164,17 +174,17 @@
   }
 
   .list__menu li.item__menu:not(:last-child) {
-    border-bottom: 1px solid #CED4DA;
+    border-bottom: 1px solid #ced4da;
     padding-bottom: 8px;
   }
 
   .list__menu li.item__menu:not(:first-child) {
-     padding-top: 8px;
+    padding-top: 8px;
   }
 
   .list__menu li:hover {
     font-weight: 700;
-    color: #DAFF01;
+    color: #daff01;
   }
 
   .list__menu li img {
