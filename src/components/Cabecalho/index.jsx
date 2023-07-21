@@ -17,6 +17,7 @@ function Cabecalho() {
         <ul className={styles.list}>
           <li><input className={styles.search} type="text" placeholder='Digite o produto' /></li>
           <li><button className={styles.btn}>Buscar</button></li>
+          <li><button className={styles.btn__mobile}>Search</button></li>
         </ul>
       </nav>
     </header>

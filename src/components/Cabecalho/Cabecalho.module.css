@@ -27,7 +27,7 @@
 .list,
 .list__menu {
   align-items: center;
-  gap: 40px;
+  gap: 1.3rem;
   list-style: none;
 }
 
@@ -41,6 +41,7 @@
 
 .list__menu li:hover {
   cursor: pointer;
+  color: #cccccc;
 }
 
 .search,
@@ -51,7 +52,7 @@
 
 .search {
   color: #6c757d;
-  background-color: #ced4da;
+  /* background-color: #ced4da; */
 
   font-size: 15px;
   font-weight: 400;
@@ -65,15 +66,18 @@
   color: #ffffff;
   background-color: #000000;
   border: 1px solid #ffffff;
-
+  
   font-size: 16px;
   font-weight: 500;
-
+  
   text-align: center;
-
+  
   width: 80px;
 }
 
+.btn__mobile {
+  display: none;
+}
 @media screen and (max-width: 1023px) {
   .logo {
     background-image: url("./logo-tablet.png");
@@ -96,12 +100,59 @@
   }
   .btn {
     font-size: 13px;
+    display: block;
     width: 67px;
   }
+
 }
 
 @media screen and (max-width: 767px) {
   .logo {
     background-image: url("./logo-mobile.png");
+  }
+
+  .container__nav {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .list__menu {
+    padding: 1rem 0;
+  }
+
+  .list {
+    padding: 1rem 0;
+    margin: 0 auto;
+    gap: 8.2px;
+  }
+
+  .search,
+  .btn__mobile {
+    border: 1px solid #000000;
+  }
+
+   .search {
+    height: 38px;
+    width: 225.6px;
+    padding: 0;
+   }
+
+  .btn {
+    display: none;
+  }
+
+  .btn__mobile {
+    color: #000000;
+    background-color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    text-align: center;
+    padding: 9px, 12px, 9px, 12px;
+    display: block;
+
+    height: 37px;
+    width: 88.42px;
   }
 }
