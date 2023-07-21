@@ -6,13 +6,6 @@ import toggleIcon from './toggle-icon.png'
 function Cabecalho() {
 
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [toggleMenuClass, setToggleMenuClass] = useState('closed');
-
-  function toggleMenuHandler(isOpened) {
-    console.log('here');
-    console.log(toggleMenuClass);
-    isOpened == true ? setToggleMenuClass('opened') : setToggleMenuClass('closed');
-  }
 
   return (
     <header className={styles.container}>
