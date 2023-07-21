@@ -132,7 +132,8 @@
     
     width: 100%;
 
-    padding: 20px 0;
+    padding: 20px 23px;
+    box-sizing: border-box;
   }
 
   .list__menu {
@@ -149,6 +150,13 @@
     padding: 42px 24px 24px 24px;
 
     box-sizing: border-box;
+
+    transition: all .5s ease;
+  }
+
+  .list__menu.opened {
+    transform: translateY(200px);
+    right: 0;
   }
 
   .list__menu li {
