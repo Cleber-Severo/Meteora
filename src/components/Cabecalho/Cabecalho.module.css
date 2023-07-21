@@ -15,6 +15,11 @@
   height: 58px;
 }
 
+.rightHeader {
+  display: flex;
+  gap: 1.3rem;
+}
+
 .logo {
   background-image: url("./logo-desktop.png");
   background-size: contain;
@@ -66,12 +71,12 @@
   color: #ffffff;
   background-color: #000000;
   border: 1px solid #ffffff;
-  
+
   font-size: 16px;
   font-weight: 500;
-  
+
   text-align: center;
-  
+
   width: 80px;
 }
 
@@ -86,7 +91,8 @@
   }
 
   .list,
-  .list__menu {
+  .list__menu,
+  .rightHeader {
     gap: 20px;
   }
 
@@ -103,7 +109,6 @@
     display: block;
     width: 67px;
   }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -111,13 +116,63 @@
     background-image: url("./logo-mobile.png");
   }
 
+  
   .container__nav {
+    background-color: transparent;
     flex-direction: column;
     padding: 0;
   }
+  
+  .rightHeader {
+    background-color: #000000;
+
+    justify-content: space-between;
+    
+    position: relative;
+    
+    width: 100%;
+
+    padding: 20px 0;
+  }
 
   .list__menu {
-    padding: 1rem 0;
+    background-color: #343A40;
+
+    align-items: start;
+    flex-direction: column;
+    gap: 0;
+
+    position: absolute;
+    top: -200px;
+    right: 0;
+
+    padding: 42px 24px 24px 24px;
+
+    box-sizing: border-box;
+  }
+
+  .list__menu li {
+    width: 100%;
+  }
+
+  .list__menu li.item__menu:not(:last-child) {
+    border-bottom: 1px solid #CED4DA;
+    padding-bottom: 8px;
+  }
+
+  .list__menu li.item__menu:not(:first-child) {
+     padding-top: 8px;
+  }
+
+  .list__menu li:hover {
+    font-weight: 700;
+    color: #DAFF01;
+  }
+
+  .list__menu li img {
+    position: absolute;
+    top: 14px;
+    right: 23px;
   }
 
   .list {
@@ -131,11 +186,11 @@
     border: 1px solid #000000;
   }
 
-   .search {
+  .search {
     height: 38px;
     width: 225.6px;
     padding: 0;
-   }
+  }
 
   .btn {
     display: none;
