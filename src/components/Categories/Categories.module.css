@@ -1,0 +1,16 @@
+.categoryList {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categoryList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .categoryList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
