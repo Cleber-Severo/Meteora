@@ -7,7 +7,7 @@ export const Categories = () => {
         <h1>Busque por categoria: </h1>
         <ul>
             <li>
-                <div className=''></div>
+                  <img src="../../public/Images/Desktop/Categorias/Categoria Bolsa.png" alt="" />
                 <h3></h3>
             </li>
         </ul>
