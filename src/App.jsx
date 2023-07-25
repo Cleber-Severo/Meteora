@@ -5,7 +5,6 @@ import Cabecalho from './components/Cabecalho'
 
 function App() {
   return (
-    // sf
     <div className='app-wrapper'> 
       <Cabecalho />
       <Banner />
