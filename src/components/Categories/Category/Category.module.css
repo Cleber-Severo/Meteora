@@ -8,6 +8,22 @@
   display: none;
 }
 
+.category h3 {
+    font-size: 16px;
+    font-weight: 500;
+    
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    
+    padding: .5rem;
+}
+
+.category img {
+    width: 160px;
+}
+
 @media screen and (max-width: 1024px) {
   .tablet {
     display: flex;

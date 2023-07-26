@@ -6,7 +6,7 @@ import { Category } from './Category';
 export const Categories = () => {
     console.log(categoryData);
     return (
-        <section>
+        <section className={styles.categoryContainer}>
             <h1>Busque por categoria: </h1>
 
             <ul className={styles.categoryList}>

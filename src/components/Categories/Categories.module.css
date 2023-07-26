@@ -1,6 +1,18 @@
+.categoryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    margin-top: 74px;
+    width: 100%;
+}
+
 .categoryList {
   display: flex;
+  justify-content: center;
   gap: 30px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
