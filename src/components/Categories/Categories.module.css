@@ -11,6 +11,7 @@
 .categoryList {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   width: 100%;
 }
@@ -18,11 +19,14 @@
 @media screen and (max-width: 1024px) {
   .categoryList {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+
+    row-gap: 24px;
   }
 }
 @media screen and (max-width: 768px) {
   .categoryList {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    row-gap: 16px;
   }
 }
