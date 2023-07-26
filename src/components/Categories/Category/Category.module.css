@@ -8,6 +8,10 @@
   display: none;
 }
 
+.category:hover {
+  cursor: pointer;
+}
+
 .category h3 {
   font-size: 16px;
   font-weight: 500;
