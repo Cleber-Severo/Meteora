@@ -1,8 +1,8 @@
 
 import './App.css'
-import { Banner } from './components/Banner'
-import Cabecalho from './components/Cabecalho'
-import { Categories } from './components/Categories'
+import { Banner } from '/src/components/Banner'
+import Cabecalho from '/src/components/Cabecalho'
+import { Categories } from '/src/components/Categories'
 
 function App() {
   return (

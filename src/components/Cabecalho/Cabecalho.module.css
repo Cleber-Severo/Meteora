@@ -21,7 +21,7 @@
 }
 
 .logo {
-  background-image: url("./logo-desktop.png");
+  background-image: url("/src/components/Cabecalho/logo-desktop.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

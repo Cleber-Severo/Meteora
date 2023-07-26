@@ -2,109 +2,109 @@
   {
     "id": 1,
     "title": "Camisetas",
-    "path": "../../public/Images/Desktop/Categorias/Categoria camiseta.png",
+    "path": "/src/assets/Images/Desktop/Categorias/Categoria camiseta.png",
     "screen": "desktop"
   },
   {
     "id": 2,
     "title": "Bolsas",
-    "path": "../../public/Images/Desktop/Categorias/Categoria Bolsa.png",
+    "path": "/src/assets/Images/Desktop/Categorias/Categoria Bolsa.png",
     "screen": "desktop"
   },
   {
     "id": 3,
     "title": "Calçados",
-    "path": "../../public/Images/Desktop/Categorias/Categoria Calçados.png",
+    "path": "/src/assets/Images/Desktop/Categorias/Categoria Calçados.png",
     "screen": "desktop"
   },
   {
     "id": 4,
     "title": "Calças",
-    "path": "../../public/Images/Desktop/Categorias/Categoria calça.png",
+    "path": "/src/assets/Images/Desktop/Categorias/Categoria calça.png",
     "screen": "desktop"
   },
   {
     "id": 5,
     "title": "Casacos",
-    "path": "../../public/Images/Desktop/Categorias/Categoria casacos.png",
+    "path": "/src/assets/Images/Desktop/Categorias/Categoria casacos.png",
     "screen": "desktop"
   },
   {
     "id": 6,
     "title": "Óculos",
-    "path": "../../public/Images/Desktop/Categorias/Categoria óculos.png",
+    "path": "/src/assets/Images/Desktop/Categorias/Categoria óculos.png",
     "screen": "desktop"
   },
   {
     "id": 7,
     "title": "Camisetas",
-    "path": "../../public/Images/Tablet/Categorias/Categoria camiseta.png",
+    "path": "/src/assets/Images/Tablet/Categorias/Categoria camiseta.png",
     "screen": "tablet"
   },
   {
     "id": 8,
     "title": "Bolsas",
-    "path": "../../public/Images/Tablet/Categorias/Categoria Bolsa.png",
+    "path": "/src/assets/Images/Tablet/Categorias/Categoria Bolsa.png",
     "screen": "tablet"
   },
   {
     "id": 9,
     "title": "Calçados",
-    "path": "../../public/Images/Tablet/Categorias/Categoria Calçados.png",
+    "path": "/src/assets/Images/Tablet/Categorias/Categoria Calçados.png",
     "screen": "tablet"
   },
   {
     "id": 10,
     "title": "Calças",
-    "path": "../../public/Images/Tablet/Categorias/Categoria calça.png",
+    "path": "/src/assets/Images/Tablet/Categorias/Categoria calça.png",
     "screen": "tablet"
   },
   {
     "id": 11,
     "title": "Casacos",
-    "path": "../../public/Images/Tablet/Categorias/Categoria casacos.png",
+    "path": "/src/assets/Images/Tablet/Categorias/Categoria casacos.png",
     "screen": "tablet"
   },
   {
     "id": 12,
     "title": "Óculos",
-    "path": "../../public/Images/Tablet/Categorias/Categoria óculos.png",
+    "path": "/src/assets/Images/Tablet/Categorias/Categoria óculos.png",
     "screen": "tablet"
   },
   {
     "id": 13,
     "title": "Camisetas",
-    "path": "../../public/Images/Mobile/Categorias/Categoria camiseta.png",
+    "path": "/src/assets/Images/Mobile/Categorias/Categoria camiseta.png",
     "screen": "mobile"
   },
   {
     "id": 14,
     "title": "Bolsas",
-    "path": "../../public/Images/Mobile/Categorias/Categoria Bolsa.png",
+    "path": "/src/assets/Images/Mobile/Categorias/Categoria Bolsa.png",
     "screen": "mobile"
   },
   {
     "id": 15,
     "title": "Calçados",
-    "path": "../../public/Images/Mobile/Categorias/Categoria Calçados.png",
+    "path": "/src/assets/Images/Mobile/Categorias/Categoria Calçados.png",
     "screen": "mobile"
   },
   {
     "id": 16,
     "title": "Calças",
-    "path": "../../public/Images/Mobile/Categorias/Categoria calça.png",
+    "path": "/src/assets/Images/Mobile/Categorias/Categoria calça.png",
     "screen": "mobile"
   },
   {
     "id": 17,
     "title": "Casacos",
-    "path": "../../public/Images/Mobile/Categorias/Categoria casacos.png",
+    "path": "/src/assets/Images/Mobile/Categorias/Categoria casacos.png",
     "screen": "mobile"
   },
   {
     "id": 18,
     "title": "Óculos",
-    "path": "../../public/Images/Mobile/Categorias/Categoria óculos.png",
+    "path": "/src/assets/Images/Mobile/Categorias/Categoria óculos.png",
     "screen": "mobile"
   }
 ]
