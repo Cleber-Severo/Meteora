@@ -1,11 +1,14 @@
 .categoryContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 
-    margin-top: 74px;
-    width: 100%;
+  margin-top: 74px;
+  width: 100%;
+
+  padding: 0 165px;
+  box-sizing: border-box;
 }
 
 .categoryList {
