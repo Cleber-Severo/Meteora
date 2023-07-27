@@ -1,9 +1,9 @@
 .product {
-    width: 350px;
+  width: 350px;
 }
 
 .product img {
-    height: 422px;
+  height: 422px;
 }
 
 .desktop {
@@ -27,6 +27,13 @@
     display: none;
   }
 
+  .product {
+    width: 330px;
+  }
+
+  .product img {
+    height: 389px;
+  }
 }
 @media screen and (max-width: 768px) {
   .mobile {
@@ -39,4 +46,11 @@
     display: none;
   }
 
+  .product {
+    width: 323px;
+  }
+
+  .product img {
+    height: 402px;
+  }
 }
