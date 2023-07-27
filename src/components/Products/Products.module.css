@@ -2,8 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   padding: 0px 165px;
+}
+
+.productsContainer h2 {
+  color: #212529;
+text-align: center;
+
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+text-align: center;
 }
 
 .products {
