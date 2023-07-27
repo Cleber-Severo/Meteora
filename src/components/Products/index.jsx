@@ -5,9 +5,9 @@ import { Product } from './Product'
 
 export const Products = () => {
   return (
-    <section>
+      <section className={styles.productsContainer}>
           <h2>Produtos que estão bombando!</h2>
-          <div className={styles.productsContainer}>
+          <div className={styles.products}>
             {
                 productsData.map( product => ( <Product key={product.id} {...product} /> ))
             }

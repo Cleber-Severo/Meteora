@@ -1,3 +1,11 @@
+.product {
+    width: 350px;
+}
+
+.product img {
+    height: 422px;
+}
+
 .desktop {
   display: flex;
   flex-direction: column;
