@@ -1,28 +1,38 @@
 .productsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0px 165px;
 }
 
 .products {
   display: grid;
   grid-template-columns: auto auto auto;
 
-  gap: 24px;
-  padding: 5rem;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 1024px) {
+  .productsContainer {
+    padding: 0px 39px;
+  }
+
   .products {
     grid-template-columns: auto auto;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .productsContainer {
+    padding: 0px 27px;
+  }
+
   .products {
     display: flex;
-     padding: 1rem;
-     gap: 4px;
+    gap: 30px;
     flex-direction: column;
+    padding: 1rem;
   }
 }
