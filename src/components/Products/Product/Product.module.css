@@ -6,6 +6,29 @@
   height: 422px;
 }
 
+.product div {
+  padding: 16px;
+}
+
+.product div h3 {
+  color: #212529;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px; /* 143.75% */
+}
+
+.product div p {
+  color: #212529;
+
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+
+  padding: 15px 0px;
+}
+
 .desktop {
   display: flex;
   flex-direction: column;
