@@ -1,7 +1,22 @@
 .productsContainer {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 
-    gap: 24px;
-    padding: 5rem;
+  gap: 24px;
+  padding: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .productsContainer {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productsContainer {
+    display: flex;
+     padding: 1rem;
+     gap: 4px;
+    flex-direction: column;
+  }
 }

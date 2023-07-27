@@ -76,7 +76,7 @@
     "title": "Jaqueta Jeans",
     "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "pricing": "150,00",
-    "path": "Images/Tablet/Imagens Cards/jaqueta.png",
+    "path": "Images/Tablet/Imagens Cards/jaqueta jeans.png",
     "screen": "tablet"
   },
   {
@@ -100,7 +100,7 @@
     "title": "Camiseta Conforto",
     "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
     "pricing": "70,00",
-    "path": "Images/Mobile/Imagens Cards/camiseta.png",
+    "path": "Images/Mobile/Imagens cards/camiseta.png",
     "screen": "mobile"
   },
   {
@@ -108,7 +108,7 @@
     "title": "Calça Alfaiataria",
     "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "pricing": "180,00",
-    "path": "Images/Mobile/Imagens Cards/calça.png",
+    "path": "Images/Mobile/Imagens cards/calça.png",
     "screen": "mobile"
   },
   {
@@ -116,7 +116,7 @@
     "title": "Tênis Chunky",
     "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "pricing": "250,00",
-    "path": "Images/Mobile/Imagens Cards/tenis.png",
+    "path": "Images/Mobile/Imagens cards/tenis.png",
     "screen": "mobile"
   },
   {
@@ -124,7 +124,7 @@
     "title": "Jaqueta Jeans",
     "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "pricing": "150,00",
-    "path": "Images/Mobile/Imagens Cards/jaqueta.png",
+    "path": "Images/Mobile/Imagens cards/jaqueta.png",
     "screen": "mobile"
   },
   {
@@ -132,7 +132,7 @@
     "title": "Óculos Redondo",
     "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "pricing": "120,00",
-    "path": "Images/Mobile/Imagens Cards/óculos.png",
+    "path": "Images/Mobile/Imagens cards/óculos.png",
     "screen": "mobile"
   },
   {
@@ -140,7 +140,7 @@
     "title": "Bolsa Coringa",
     "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "pricing": "120,00",
-    "path": "Images/Mobile/Imagens Cards/bolsa.png",
+    "path": "Images/Mobile/Imagens cards/bolsa.png",
     "screen": "mobile"
   }
 ]
