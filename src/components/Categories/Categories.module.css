@@ -5,11 +5,12 @@
   justify-content: center;
   gap: 32px;
 
-  margin-top: 40px;
-  width: 100%;
-
-  padding: 0 165px;
   box-sizing: border-box;
+  
+  margin-top: 74px;
+  margin-bottom: 48px;
+  padding: 0 165px;
+  width: 100%;
 }
 
 .categoryContainer h2 {
@@ -36,7 +37,8 @@
   }
 
   .categoryContainer {
-    margin-top: 24px;
+    margin-top: 40px;
+    margin-bottom: 45px;
   }
 
   .categoryContainer h2 {
@@ -46,6 +48,11 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .categoryContainer {
+    margin-top: 24px;
+    margin-bottom: 50px;
+  }
+
   .categoryList {
     grid-template-columns: auto auto;
     row-gap: 16px;

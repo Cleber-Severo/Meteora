@@ -10,7 +10,7 @@
 
 .category {
   border: 2px solid transparent;
-  transition: all .25s ease;
+  transition: all .15s ease;
 }
 
 .category:hover {
