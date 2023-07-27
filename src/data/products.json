@@ -2,108 +2,126 @@
   {
     "id": 1,
     "title": "Camiseta Conforto",
+    "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
     "path": "Images/Desktop/Imagens Cards/Camiseta.png",
     "screen": "desktop"
   },
   {
     "id": 2,
     "title": "Calça Alfaiataria",
+    "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "path": "Images/Desktop/Imagens Cards/Calça.png",
     "screen": "desktop"
   },
   {
     "id": 3,
     "title": "Tênis Chunky",
+    "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "path": "Images/Desktop/Imagens Cards/Tenis.png",
     "screen": "desktop"
   },
   {
     "id": 4,
     "title": "Jaqueta Jeans",
+    "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "path": "Images/Desktop/Imagens Cards/Jaqueta.png",
     "screen": "desktop"
   },
   {
     "id": 5,
     "title": "Óculos Redondo",
+    "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "path": "Images/Desktop/Imagens Cards/óculos.png",
     "screen": "desktop"
   },
   {
     "id": 6,
     "title": "Bolsa Coringa",
+    "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "path": "Images/Desktop/Imagens Cards/Bolsa.png",
     "screen": "desktop"
   },
   {
     "id": 7,
     "title": "Camiseta Conforto",
+    "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
     "path": "Images/Tablet/Imagens Cards/camiseta.png",
     "screen": "tablet"
   },
   {
     "id": 8,
     "title": "Calça Alfaiataria",
+    "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "path": "Images/Tablet/Imagens Cards/calça.png",
     "screen": "tablet"
   },
   {
     "id": 9,
     "title": "Tênis Chunky",
+    "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "path": "Images/Tablet/Imagens Cards/tenis.png",
     "screen": "tablet"
   },
   {
     "id": 10,
     "title": "Jaqueta Jeans",
+    "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "path": "Images/Tablet/Imagens Cards/jaqueta.png",
     "screen": "tablet"
   },
   {
     "id": 11,
     "title": "Óculos Redondo",
+    "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "path": "Images/Tablet/Imagens Cards/óculos.png",
     "screen": "tablet"
   },
   {
     "id": 12,
     "title": "Bolsa Coringa",
+    "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "path": "Images/Tablet/Imagens Cards/bolsa.png",
     "screen": "tablet"
   },
   {
     "id": 13,
     "title": "Camiseta Conforto",
+    "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
     "path": "Images/Mobile/Imagens Cards/camiseta.png",
     "screen": "mobile"
   },
   {
     "id": 14,
     "title": "Calça Alfaiataria",
+    "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "path": "Images/Mobile/Imagens Cards/calça.png",
     "screen": "mobile"
   },
   {
     "id": 15,
     "title": "Tênis Chunky",
+    "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "path": "Images/Mobile/Imagens Cards/tenis.png",
     "screen": "mobile"
   },
   {
     "id": 16,
     "title": "Jaqueta Jeans",
+    "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "path": "Images/Mobile/Imagens Cards/jaqueta.png",
     "screen": "mobile"
   },
   {
     "id": 17,
     "title": "Óculos Redondo",
+    "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "path": "Images/Mobile/Imagens Cards/óculos.png",
     "screen": "mobile"
   },
   {
     "id": 18,
     "title": "Bolsa Coringa",
+    "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "path": "Images/Mobile/Imagens Cards/bolsa.png",
     "screen": "mobile"
   }
