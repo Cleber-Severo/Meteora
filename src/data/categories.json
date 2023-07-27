@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Camisetas",
-    "path": "src/components/Categories/Category/Categoria-camiseta.png",
+    "path": "../public/images/Categoria-camiseta.png",
     "screen": "desktop"
   },
   {
