@@ -7,7 +7,7 @@ export const Categories = () => {
     console.log(categoryData);
     return (
         <section className={styles.categoryContainer}>
-            <h1>Busque por categoria: </h1>
+            <h2>Busque por categoria: </h2>
 
             <ul className={styles.categoryList}>
                 {

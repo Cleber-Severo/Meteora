@@ -8,8 +8,14 @@
   display: none;
 }
 
+.category {
+  border: 2px solid transparent;
+  transition: all .25s ease;
+}
+
 .category:hover {
   cursor: pointer;
+  border-color: black;
 }
 
 .category h3 {
