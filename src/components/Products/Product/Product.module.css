@@ -1,5 +1,7 @@
 .product {
   width: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+
 }
 
 .product img {
