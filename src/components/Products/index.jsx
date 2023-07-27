@@ -7,7 +7,7 @@ export const Products = () => {
   return (
     <section>
           <h2>Produtos que estão bombando!</h2>
-          <div>
+          <div className={styles.productsContainer}>
             {
                 productsData.map( product => ( <Product key={product.id} {...product} /> ))
             }

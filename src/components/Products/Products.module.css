@@ -1,0 +1,7 @@
+.productsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    gap: 24px;
+    padding: 5rem;
+}

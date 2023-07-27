@@ -3,7 +3,6 @@ import styles from './Category.module.css'
 
 export const Category = ({ screen, title, path }) => {
     const testImagejson = path;
-    console.log(screen, title, path);
     return (
         <li className={`${styles[screen]} ${styles.category}`}>
             <img src={testImagejson} alt="" />

@@ -4,7 +4,6 @@ import categoryData from '/src/data/categories.json'
 import { Category } from './Category';
 
 export const Categories = () => {
-    console.log(categoryData);
     return (
         <section className={styles.categoryContainer}>
             <h2>Busque por categoria: </h2>

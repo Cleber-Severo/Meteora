@@ -1,0 +1,34 @@
+.desktop {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile,
+.tablet {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile,
+  .desktop {
+    display: none;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tablet,
+  .desktop {
+    display: none;
+  }
+
+}
