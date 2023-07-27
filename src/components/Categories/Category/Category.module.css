@@ -43,6 +43,7 @@
 
   .category img {
     max-width: 210px;
+    height: 157px;
   }
 }
 @media screen and (max-width: 768px) {

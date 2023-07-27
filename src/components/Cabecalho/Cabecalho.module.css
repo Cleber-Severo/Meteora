@@ -209,12 +209,10 @@
     height: 38px;
     width: 225.6px;
     padding: 0;
-  }
-
-  .search::placeholder {
     padding-left: 12px;
   }
 
+  
   .btn {
     display: none;
   }
