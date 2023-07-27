@@ -11,8 +11,12 @@ export const Categories = () => {
 
             <ul className={styles.categoryList}>
                 {
-                    categoryData.map(item =>
-                        (<Category {...item} key={item.id} />))
+                    categoryData.map(item => {
+                        return <li className={`${styles[item.screen]} ${styles.category}`} key={item.id}>
+                            <img src={item.path} alt="" />
+                            <h3>{item.title}</h3>
+                        </li>
+                    })
                 }
             </ul>
         </section>
