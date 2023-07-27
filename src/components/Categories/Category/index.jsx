@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './Category.module.css'
-import testImage from './Categoria-camiseta.png'
 
 export const Category = ({ screen, title, path }) => {
     const testImagejson = path;

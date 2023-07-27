@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Camiseta Conforto",
+    "path": "Images/Desktop/Imagens Cards/Camiseta.png",
+    "screen": "desktop"
+  },
+  {
+    "id": 2,
+    "title": "Calça Alfaiataria",
+    "path": "Images/Desktop/Imagens Cards/Calça.png",
+    "screen": "desktop"
+  },
+  {
+    "id": 3,
+    "title": "Tênis Chunky",
+    "path": "Images/Desktop/Imagens Cards/Tenis.png",
+    "screen": "desktop"
+  },
+  {
+    "id": 4,
+    "title": "Jaqueta Jeans",
+    "path": "Images/Desktop/Imagens Cards/Jaqueta.png",
+    "screen": "desktop"
+  },
+  {
+    "id": 5,
+    "title": "Óculos Redondo",
+    "path": "Images/Desktop/Imagens Cards/óculos.png",
+    "screen": "desktop"
+  },
+  {
+    "id": 6,
+    "title": "Bolsa Coringa",
+    "path": "Images/Desktop/Imagens Cards/Bolsa.png",
+    "screen": "desktop"
+  },
+  {
+    "id": 7,
+    "title": "Camiseta Conforto",
+    "path": "Images/Tablet/Imagens Cards/camiseta.png",
+    "screen": "tablet"
+  },
+  {
+    "id": 8,
+    "title": "Calça Alfaiataria",
+    "path": "Images/Tablet/Imagens Cards/calça.png",
+    "screen": "tablet"
+  },
+  {
+    "id": 9,
+    "title": "Tênis Chunky",
+    "path": "Images/Tablet/Imagens Cards/tenis.png",
+    "screen": "tablet"
+  },
+  {
+    "id": 10,
+    "title": "Jaqueta Jeans",
+    "path": "Images/Tablet/Imagens Cards/jaqueta.png",
+    "screen": "tablet"
+  },
+  {
+    "id": 11,
+    "title": "Óculos Redondo",
+    "path": "Images/Tablet/Imagens Cards/óculos.png",
+    "screen": "tablet"
+  },
+  {
+    "id": 12,
+    "title": "Bolsa Coringa",
+    "path": "Images/Tablet/Imagens Cards/bolsa.png",
+    "screen": "tablet"
+  },
+  {
+    "id": 13,
+    "title": "Camiseta Conforto",
+    "path": "Images/Mobile/Imagens Cards/camiseta.png",
+    "screen": "mobile"
+  },
+  {
+    "id": 14,
+    "title": "Calça Alfaiataria",
+    "path": "Images/Mobile/Imagens Cards/calça.png",
+    "screen": "mobile"
+  },
+  {
+    "id": 15,
+    "title": "Tênis Chunky",
+    "path": "Images/Mobile/Imagens Cards/tenis.png",
+    "screen": "mobile"
+  },
+  {
+    "id": 16,
+    "title": "Jaqueta Jeans",
+    "path": "Images/Mobile/Imagens Cards/jaqueta.png",
+    "screen": "mobile"
+  },
+  {
+    "id": 17,
+    "title": "Óculos Redondo",
+    "path": "Images/Mobile/Imagens Cards/óculos.png",
+    "screen": "mobile"
+  },
+  {
+    "id": 18,
+    "title": "Bolsa Coringa",
+    "path": "Images/Mobile/Imagens Cards/bolsa.png",
+    "screen": "mobile"
+  }
+]
