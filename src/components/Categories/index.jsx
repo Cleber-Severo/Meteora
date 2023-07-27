@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Categories.module.css'
-import categoryData from '../../data/categories.json'
+import categoryData from '/src/data/categories.json'
 import { Category } from './Category';
 
 export const Categories = () => {
