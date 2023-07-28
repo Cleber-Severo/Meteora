@@ -8,9 +8,9 @@ import { FacilitiesItems } from './FacilitiesItems'
 
 export const Facilities = () => {
   return (
-    <section>
+    <section className={styles.container}>
         <h2>Conheça todas as facilidades</h2>
-        <div>
+          <div className={styles.facilitiesItems}>
             <FacilitiesItems 
                 image={xDiamondImg} 
                 title="Pague pelo pix"

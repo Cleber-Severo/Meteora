@@ -3,7 +3,7 @@ import styles from './FacilitiesItems.module.css'
 
 export const FacilitiesItems = ({image, title, description}) => {
   return (
-    <div>
+      <div className={styles.container}>
         <img src={image} alt="" />
         <div>
             <h3>{title}</h3>

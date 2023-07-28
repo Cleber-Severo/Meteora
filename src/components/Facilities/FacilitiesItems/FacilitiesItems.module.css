@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  gap: 24px;
+}
+
+.container div h3 {
+  color: #daff01;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px; 
+
+  margin-bottom: 16px;
+}
+.container div p {
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+}
