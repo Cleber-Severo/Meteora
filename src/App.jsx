@@ -1,5 +1,6 @@
 
 import './App.css'
+import { Facilities } from './components/Facilities'
 import { Products } from './components/Products'
 import { Banner } from '/src/components/Banner'
 import Cabecalho from '/src/components/Cabecalho'
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <Categories />
       <Products />
+      <Facilities />
     </div>
   )
 }
