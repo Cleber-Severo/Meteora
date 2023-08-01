@@ -8,7 +8,7 @@ const NewsLetter = () => {
             <div>
                 <input type="text" placeholder='Digite Seu email' />
                 <MeteoraBtn text='Enviar' />
-                <button>Enviar</button>
+                
             </div>
         </form>
     )
