@@ -36,6 +36,7 @@
 
 .newsLetter div input {
   width: 456px;
+  padding-left: 15px;
 }
 
 .newsLetter div input::placeholder {
@@ -45,7 +46,11 @@
   font-weight: 400;
   line-height: 23px; /* 143.75% */
 
-  padding-left: 15px;
+}
+
+.newsLetter div input:focus {
+    outline: none;
+    border: 1px solid #9353FF;
 }
 
 @media screen and (max-width: 1024px) {
