@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Product.module.css'
+import MeteoraBtn from '../../MeteoraBtn'
 
 export const Product = ({ path, title, pricing, description, screen }) => {
     return (
@@ -9,7 +10,7 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <h3>R$ {pricing}</h3>
-                <button>Ver mais</button>
+                <MeteoraBtn text='Ver Mais' />
             </div>
         </article>
     )
