@@ -1,4 +1,5 @@
 import React from 'react'
+import MeteoraBtn from '../MeteoraBtn'
 
 const NewsLetter = () => {
     return (
@@ -6,7 +7,9 @@ const NewsLetter = () => {
             <p>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
             <div>
                 <input type="text" placeholder='Digite Seu email' />
-                <button>Enviar</button></div>
+                <MeteoraBtn text='Enviar' />
+                <button>Enviar</button>
+            </div>
         </form>
     )
 }
