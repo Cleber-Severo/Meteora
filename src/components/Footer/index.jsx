@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
-      <p>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+      <p className={styles.footerText}>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
   )
 }
 
