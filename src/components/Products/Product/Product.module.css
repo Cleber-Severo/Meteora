@@ -1,7 +1,6 @@
 .product {
   width: 350px;
   border: 1px solid rgba(0, 0, 0, 0.13);
-
 }
 
 .product img {
@@ -20,6 +19,10 @@
   line-height: 23px; /* 143.75% */
 }
 
+.product div h3:not(:first-child){
+  margin-bottom: 10px;
+}
+
 .product div p {
   color: #212529;
 
@@ -29,13 +32,6 @@
   line-height: 20px; /* 153.846% */
 
   padding: 15px 0px;
-}
-
-
-
-.product div button:hover {
-    background-color: #7e33ff;
-    cursor: pointer;
 }
 
 .desktop {
