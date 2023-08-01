@@ -10,3 +10,10 @@
 
   padding: 17px 0px;
 }
+
+@media screen and (max-width: 768px) {
+    .footerText {
+        padding: 17px 75px;
+        
+    }
+}
