@@ -1,7 +1,6 @@
-
 .swiper {
   width: 100%;
-  height: 400px;
+  height: 415px;
 }
 
 .swiper-slide {
@@ -9,8 +8,55 @@
   background-size: cover;
 }
 
-.slider img {
-  
-  object-fit: contain;
+/* .slider img {
+  object-fit: fill;
   width: 100%;
+  height: 100%;
+} */
+
+
+.desktop {
+  display: block;
+}
+
+.desktop,
+.tablet,
+.mobile {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  margin-top: -2.4px;
+}
+
+.tablet,
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .tablet {
+    display: block;
+  }
+
+  .desktop,
+  .mobile {
+    display: none;
+  }
+
+  .desktop,
+  .tablet,
+  .mobile {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop,
+  .tablet {
+    display: none;
+  }
 }

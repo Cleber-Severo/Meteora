@@ -19,7 +19,7 @@ function App() {
       <Facilities />
       <NewsLetter />
       <Footer />
-      <Caroulsel />
+      
     </div>
   )
 }
