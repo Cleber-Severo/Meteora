@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from './MeteoraBtn.module.css'
 
-const MeteoraBtn = ({text}) => {
+const MeteoraBtn = ({ text, handleClickOpen }) => {
   return (
-      <button className={styles.btn}>{text}</button>
+      <button className={styles.btn} onClick={() => {
+      handleClickOpen()
+      }}>{text}</button>
   )
 }
 
