@@ -91,6 +91,21 @@
   .mobile {
     margin-top: 0;
   }
+
+  .slider div.secondLabel {
+    margin-right: 99px;
+  }
+  .slider div.thirdLabel {
+    margin-left: 99px;
+  }
+
+  .slider div h2 {
+    font-size: 32px;
+  }
+
+  .slider div span {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -102,4 +117,25 @@
   .tablet {
     display: none;
   }
+
+  .slider div {
+    
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .slider div.secondLabel, .slider div.thirdLabel {
+    align-items: center;
+  }
+
+  .slider div.secondLabel {
+    margin: 0px auto;
+  }
+  .slider div.thirdLabel {
+    margin: 0 auto;
+  }
+
 }

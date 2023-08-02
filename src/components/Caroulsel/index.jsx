@@ -40,7 +40,7 @@ export default function Caroulsel() {
                 delay: 2500,
                 disableOnInteraction: false,
             }}
-            modules={[ EffectFade, Navigation, Pagination]}
+            modules={[ Autoplay, EffectFade, Navigation, Pagination]}
             className={styles.swiper}
         >
             <SwiperSlide className={styles.slider}>
