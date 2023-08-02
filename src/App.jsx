@@ -1,5 +1,6 @@
 
 import './App.css'
+import Caroulsel from './components/Caroulsel'
 import { Facilities } from './components/Facilities'
 import Footer from './components/Footer'
 import NewsLetter from './components/NewsLetter'
@@ -18,6 +19,7 @@ function App() {
       <Facilities />
       <NewsLetter />
       <Footer />
+      <Caroulsel />
     </div>
   )
 }
