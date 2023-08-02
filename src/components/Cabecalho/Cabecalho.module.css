@@ -12,7 +12,7 @@
 
   padding: 1rem 23px;
 
-  
+  z-index: 2;
 }
 
 .rightHeader {
@@ -38,6 +38,7 @@
 
 .list__menu {
   color: white;
+  z-index: 2;
 }
 
 .list__menu li {
