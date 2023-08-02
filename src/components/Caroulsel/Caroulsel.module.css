@@ -1,13 +1,16 @@
 .swiper {
   width: 100%;
-  height: 415px;
+  height: auto;
 
   position: relative;
+
+  overflow: hidden;
 }
 
 .slider {
   background-position: center;
   background-size: cover;
+  width: 100%;
 }
 
 .slider div {
@@ -50,11 +53,12 @@
   line-height: normal;
 }
 
-/* .slider img {
-  object-fit: fill;
+.slider img {
   width: 100%;
   height: 100%;
-} */
+  object-fit: cover;
+  object-position: center;
+}
 
 .desktop {
   display: block;
