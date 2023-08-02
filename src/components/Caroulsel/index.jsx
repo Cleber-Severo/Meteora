@@ -40,7 +40,7 @@ export default function Caroulsel() {
                 delay: 2500,
                 disableOnInteraction: false,
             }}
-            modules={[Autoplay , EffectFade, Navigation, Pagination]}
+            modules={[ EffectFade, Navigation, Pagination]}
             className={styles.swiper}
         >
             <SwiperSlide className={styles.slider}>
@@ -52,11 +52,20 @@ export default function Caroulsel() {
                 <img src={desktopTwoImg} className={styles.desktop} />
                 <img src={tabletTwoImg} className={styles.tablet} />
                 <img src={mobileTwoImg} className={styles.mobile} />
+                <div className={styles.secondLabel}>
+                    <h2>Coleção Atemporal</h2>
+                    <span>Estilo e qualidade para durar.</span>
+                </div>
             </SwiperSlide>
             <SwiperSlide className={styles.slider}>
                 <img src={desktopThreeImg} className={styles.desktop} />
                 <img src={tabletThreeImg} className={styles.tablet} />
                 <img src={mobileThreeImg} className={styles.mobile} />
+
+                <div className={styles.thirdLabel}>
+                    <h2>Coleção Atemporal</h2>
+                    <span>Alto impacto visual, baixo impacto ambiental.</span>
+                </div>
             </SwiperSlide>
           
         </Swiper>

@@ -1,11 +1,55 @@
 .swiper {
   width: 100%;
   height: 415px;
+
+  position: relative;
 }
 
-.swiper-slide {
+.slider {
   background-position: center;
   background-size: cover;
+}
+
+.slider div {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 163px;
+
+  z-index: 10;
+}
+
+.slider div.secondLabel {
+  align-items: end;
+  right: 0;
+  margin-right: 165px;
+  margin-left: 0;
+}
+.slider div.thirdLabel {
+  left: 0;
+  align-items: start;
+  margin-right: 0;
+  margin-left: 165px;
+}
+
+.slider div h2 {
+  color: #fff;
+  text-align: right;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.slider div span {
+  color: #fff;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* .slider img {
@@ -13,7 +57,6 @@
   width: 100%;
   height: 100%;
 } */
-
 
 .desktop {
   display: block;
