@@ -11,7 +11,7 @@ import styles from './Caroulsel.module.css'
 
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 export default function Caroulsel() {
     return (
@@ -19,11 +19,16 @@ export default function Caroulsel() {
         <Swiper
             spaceBetween={30}
             effect={'fade'}
+            loop={true}
             navigation={true}
             pagination={{
                 clickable: true,
             }}
-            modules={[EffectFade, Navigation, Pagination]}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            modules={[Autoplay , EffectFade, Navigation, Pagination]}
             className={styles.swiper}
         >
             <SwiperSlide className={styles.slider}>
