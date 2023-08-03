@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 
 import styles from './Product.module.css'
 import MeteoraBtn from '../../MeteoraBtn'
+import ProductModalColorSize from '../ProductModalColorSize';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -96,7 +97,7 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                                 <p>{description}</p>
                                 <h3>R$ {pricing}</h3>
                                 <span>Vendido e entregue por Riachuelo</span>
-                                
+                                <ProductModalColorSize />
                             </div>
                             <MeteoraBtn text='Adicionar à sacola' />
                         </div>
