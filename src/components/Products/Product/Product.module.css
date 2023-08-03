@@ -165,4 +165,8 @@
     max-width: 90vw;
     height: 95vh;
   }
+
+  .modalContent {
+    flex-direction: column;
+  }
 }
