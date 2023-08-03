@@ -88,8 +88,17 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                     </div>
                 </BootstrapDialogTitle>
                 <DialogContent dividers>
-                    
-                    <img src={path} alt="" />
+                    <form>
+                        <img src={path} alt="" />
+                        <div>
+                            <div>
+                                <h3>{title}</h3>
+                                <p>{description}</p>
+                                <h3>{pricing}</h3>
+                            </div>
+                            <MeteoraBtn text='Adicionar à sacola' />
+                        </div>
+                    </form>
                 </DialogContent>
                 
             </BootstrapDialog>
