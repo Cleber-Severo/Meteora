@@ -34,15 +34,19 @@
   padding: 15px 0px;
 }
 
-.modal > div {
-  width: 100%;
-}
+
 
 .modal > div > div {
   width: 100%;
+  max-width: 700px;
 }
 
-.css-140puxv-MuiTypography-root-MuiDialogTitle-root  {
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper   {
+  background-color: red;
+  max-width: none;
+}
+
+.headerContainer {
   background-color: black;
   display: flex;
   align-items: center;

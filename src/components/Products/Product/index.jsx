@@ -81,7 +81,7 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                 open={open}
                 className={styles.modal}
             >
-                <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+                <BootstrapDialogTitle id="customized-dialog-title" className={styles.headerContainer} onClose={handleClose}>
                     <div className={styles.modalHeader}>
                         <img src="Images/check-circle.svg" alt="" />
                         <h2>Confira detalhes sobre o produto</h2>
