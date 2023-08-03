@@ -61,6 +61,57 @@
   line-height: normal;
 }
 
+.modalContent,
+.modalContent > div,
+.modalProductInfo {
+  display: flex;
+}
+
+.modalContent {
+  gap: 16px;
+}
+
+.modalContent > div,
+.modalProductInfo {
+  flex-direction: column;
+}
+
+.modalContent > div {
+  gap: 16px;
+}
+
+.modalProductInfo {
+  gap: 24px;
+}
+
+.modalProductInfo h3:first-child {
+  color: #212529;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px; /* 143.75% */
+}
+
+.modalProductInfo h3:not(:first-child) {
+  color: #212529;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.modalProductInfo p {
+  color: #212529;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+
+  border-bottom: 1px solid #000000;
+
+  padding-bottom: 24px;
+}
+
 .desktop {
   display: flex;
   flex-direction: column;
