@@ -19,7 +19,7 @@
   line-height: 23px; /* 143.75% */
 }
 
-.product div h3:not(:first-child){
+.product div h3:not(:first-child) {
   margin-bottom: 10px;
 }
 
@@ -32,6 +32,36 @@
   line-height: 20px; /* 153.846% */
 
   padding: 15px 0px;
+}
+
+.modal > div {
+  width: 100%;
+}
+
+.modal > div > div {
+  width: 100%;
+}
+
+.css-140puxv-MuiTypography-root-MuiDialogTitle-root  {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.modalHeader {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modalHeader h2 {
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .desktop {

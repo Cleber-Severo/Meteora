@@ -79,19 +79,19 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                 onClose={handleClose}
                 aria-labelledby="customized-dialog-title"
                 open={open}
+                className={styles.modal}
             >
                 <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                    Modal title
+                    <div className={styles.modalHeader}>
+                        <img src="Images/check-circle.svg" alt="" />
+                        <h2>Confira detalhes sobre o produto</h2>
+                    </div>
                 </BootstrapDialogTitle>
                 <DialogContent dividers>
                     
                     <img src={path} alt="" />
                 </DialogContent>
-                <DialogActions>
-                    <Button autoFocus onClick={handleClose}>
-                        Save changes
-                    </Button>
-                </DialogActions>
+                
             </BootstrapDialog>
         </article>
     )
