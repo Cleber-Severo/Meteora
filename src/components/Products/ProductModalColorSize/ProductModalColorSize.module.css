@@ -6,3 +6,27 @@
   font-weight: 700;
   line-height: 20px; /* 153.846% */
 }
+
+.radioContainer {
+  border-top: 1px solid #D8D8D8;
+}
+
+.radioContainer:first-child {
+  margin-bottom: 16px;
+}
+
+.radioContainer h3 {
+  margin: 16px 0;
+}
+
+.radioContainer > div {
+  display: flex;
+  gap: 16px;
+}
+
+.radioContainer > div  div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
