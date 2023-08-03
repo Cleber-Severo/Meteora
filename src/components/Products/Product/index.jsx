@@ -97,13 +97,13 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                                 <p>{description}</p>
                                 <h3>R$ {pricing}</h3>
                                 <span>Vendido e entregue por Riachuelo</span>
-                                <ProductModalColorSize />
                             </div>
+                            <ProductModalColorSize />
                             <MeteoraBtn text='Adicionar à sacola' />
                         </div>
                     </form>
                 </DialogContent>
-                
+
             </BootstrapDialog>
         </article>
     )
