@@ -34,16 +34,9 @@
   padding: 15px 0px;
 }
 
-
-
 .modal > div > div {
   width: 100%;
   max-width: 700px;
-}
-
-.css-1t1j96h-MuiPaper-root-MuiDialog-paper   {
-  background-color: red;
-  max-width: none;
 }
 
 .headerContainer {
@@ -114,5 +107,11 @@
 
   .product img {
     height: 402px;
+  }
+
+  .modal > div > div {
+    width: 100%;
+    max-width: 90vw;
+    height: 95vh;
   }
 }
