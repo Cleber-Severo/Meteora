@@ -53,6 +53,56 @@
     border: 1px solid #9353FF;
 }
 
+.modal > div > div {
+  width: 100%;
+  max-width: 700px;
+}
+
+.headerContainer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.modalHeader {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modalHeader h2 {
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.modalContent,
+.modalContent > div,
+.modalProductInfo {
+  display: flex;
+}
+
+.modalContent {
+  gap: 16px;
+}
+
+.modalContent > div {
+  flex-direction: column;
+}
+
+.modalContent > div {
+  gap: 16px;
+}
+
+.modal > div {
+  flex-direction: column;
+  justify-content: start;
+}
+
 @media screen and (max-width: 1024px) {
   .newsLetter {
     width: 690px;
