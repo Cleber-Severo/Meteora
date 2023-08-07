@@ -3,14 +3,17 @@ import styles from './Categories.module.css'
 import categoryData from '/src/data/categories.json'
 import { Category } from './Category';
 
-export const Categories = () => {
+export const Categories = ({ meteoraDB }) => {
+
+    console.log(meteoraDB);
+
     return (
         <section className={styles.categoryContainer}>
             <h2>Busque por categoria: </h2>
 
             <ul className={styles.categoryList}>
                 {
-                    categoryData.map(item =>
+                    meteoraDB.map(item =>
                         (<Category {...item} key={item.id} />))
                 }
             </ul>
