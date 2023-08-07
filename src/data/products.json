@@ -3,6 +3,7 @@
     "id": 1,
     "title": "Camiseta Conforto",
     "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+    "category": "shirts",
     "pricing": "70,00",
     "path": "Images/Desktop/Imagens Cards/Camiseta.png",
     "screen": "desktop"
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "title": "Calça Alfaiataria",
+    "category": "pants",
     "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "pricing": "180,00",
     "path": "Images/Desktop/Imagens Cards/Calça.png",
@@ -18,6 +20,7 @@
   {
     "id": 3,
     "title": "Tênis Chunky",
+    "category": "shoes",
     "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "pricing": "250,00",
     "path": "Images/Desktop/Imagens Cards/Tenis.png",
@@ -26,6 +29,7 @@
   {
     "id": 4,
     "title": "Jaqueta Jeans",
+    "category": "jackets",
     "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "pricing": "150,00",
     "path": "Images/Desktop/Imagens Cards/Jaqueta.png",
@@ -34,6 +38,7 @@
   {
     "id": 5,
     "title": "Óculos Redondo",
+    "category": "glasses",
     "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "pricing": "120,00",
     "path": "Images/Desktop/Imagens Cards/óculos.png",
@@ -42,6 +47,7 @@
   {
     "id": 6,
     "title": "Bolsa Coringa",
+    "category": "woman bags",
     "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "pricing": "120,00",
     "path": "Images/Desktop/Imagens Cards/Bolsa.png",
@@ -51,6 +57,7 @@
     "id": 7,
     "title": "Camiseta Conforto",
     "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+    "category": "shirts",
     "pricing": "70,00",
     "path": "Images/Tablet/Imagens Cards/camiseta.png",
     "screen": "tablet"
@@ -58,6 +65,7 @@
   {
     "id": 8,
     "title": "Calça Alfaiataria",
+    "category": "pants",
     "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "pricing": "180,00",
     "path": "Images/Tablet/Imagens Cards/calça.png",
@@ -66,6 +74,7 @@
   {
     "id": 9,
     "title": "Tênis Chunky",
+    "category": "shoes",
     "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "pricing": "250,00",
     "path": "Images/Tablet/Imagens Cards/tenis.png",
@@ -74,6 +83,7 @@
   {
     "id": 10,
     "title": "Jaqueta Jeans",
+    "category": "jackets",
     "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "pricing": "150,00",
     "path": "Images/Tablet/Imagens Cards/jaqueta jeans.png",
@@ -82,6 +92,7 @@
   {
     "id": 11,
     "title": "Óculos Redondo",
+    "category": "glasses",
     "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "pricing": "120,00",
     "path": "Images/Tablet/Imagens Cards/óculos.png",
@@ -90,6 +101,7 @@
   {
     "id": 12,
     "title": "Bolsa Coringa",
+    "category": "woman bags",
     "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "pricing": "120,00",
     "path": "Images/Tablet/Imagens Cards/bolsa.png",
@@ -99,6 +111,7 @@
     "id": 13,
     "title": "Camiseta Conforto",
     "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+    "category": "shirts",
     "pricing": "70,00",
     "path": "Images/Mobile/Imagens cards/camiseta.png",
     "screen": "mobile"
@@ -106,6 +119,7 @@
   {
     "id": 14,
     "title": "Calça Alfaiataria",
+    "category": "pants",
     "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
     "pricing": "180,00",
     "path": "Images/Mobile/Imagens cards/calça.png",
@@ -114,6 +128,7 @@
   {
     "id": 15,
     "title": "Tênis Chunky",
+    "category": "shoes",
     "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
     "pricing": "250,00",
     "path": "Images/Mobile/Imagens cards/tenis.png",
@@ -122,6 +137,7 @@
   {
     "id": 16,
     "title": "Jaqueta Jeans",
+    "category": "jackets",
     "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
     "pricing": "150,00",
     "path": "Images/Mobile/Imagens cards/jaqueta jeans.png",
@@ -130,6 +146,7 @@
   {
     "id": 17,
     "title": "Óculos Redondo",
+    "category": "glasses",
     "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
     "pricing": "120,00",
     "path": "Images/Mobile/Imagens cards/óculos.png",
@@ -138,6 +155,7 @@
   {
     "id": 18,
     "title": "Bolsa Coringa",
+    "category": "woman bags",
     "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
     "pricing": "120,00",
     "path": "Images/Mobile/Imagens cards/bolsa.png",
