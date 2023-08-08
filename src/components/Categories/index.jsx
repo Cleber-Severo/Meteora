@@ -3,9 +3,7 @@ import styles from './Categories.module.css'
 import categoryData from '/src/data/categories.json'
 import { Category } from './Category';
 
-export const Categories = ({ meteoraDB }) => {
-
-    console.log(meteoraDB);
+export const Categories = ({ meteoraDB, filterHandler }) => {
 
     return (
         <section className={styles.categoryContainer}>
@@ -14,7 +12,7 @@ export const Categories = ({ meteoraDB }) => {
             <ul className={styles.categoryList}>
                 {
                     meteoraDB.map(item =>
-                        (<Category {...item} key={item.id} />))
+                        (<Category {...item} key={item.id} filterHandler={filterHandler} />))
                 }
             </ul>
         </section>

@@ -12,6 +12,8 @@ import { Categories } from '/src/components/Categories'
 
 function App() {
 
+  const [productList, setProductList] = useState([]);
+  const [categoryList, setCategoryList] = useState([]);
   const [meteoraDB, setMeteoraDB] = useState();
 
   useEffect(() => {
@@ -19,19 +21,30 @@ function App() {
     async function awaitData() {
       const url = await fetch('https://my-json-server.typicode.com/Cleber-Severo/Meteora-db/db');
       const data = await url.json();
-      return setMeteoraDB(data);
+      setMeteoraDB(data);
+      setProductList(data.products);
+      setCategoryList(data.categories);
+
     }
 
     awaitData();
   }, []);
+
+  function filterHandler(category) {
+    let newList = meteoraDB.products.filter(product => (product.category == category));
+    setProductList(newList)
+    newList = [];
+  }
+
+ 
 
   if (meteoraDB) {
     return (
       <div className='app-wrapper'>
         <Cabecalho />
         <Banner />
-        <Categories meteoraDB={meteoraDB.categories} />
-        <Products meteoraDB={meteoraDB.products} />
+        <Categories meteoraDB={categoryList} filterHandler={filterHandler} />
+        <Products meteoraDB={productList} />
         <Facilities />
         <NewsLetter />
         <Footer />
