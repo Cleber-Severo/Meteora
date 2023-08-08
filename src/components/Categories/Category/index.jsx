@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Category.module.css'
 
-export const Category = ({ screen, title, path, category, filterHandler }) => {
+export const Category = ({ screen, title, path, category, filterHandler}) => {
     const testImagejson = path;
+    const [selected, setSelected] = useState(false)
+
+
     return (
-        <li className={`${styles[screen]} ${styles.category}`} onClick={() => { filterHandler(category) }}>
+        <li 
+            className={`${styles[screen]} ${styles.category}`} 
+            onClick={() => { 
+                setSelected(!selected);
+                if(selected) {
+                    filterHandler(category, true)
+                    return
+                }
+                filterHandler(category) 
+            }}
+        >
             <img src={testImagejson} alt="" />
             <h3>{title}</h3>
         </li>

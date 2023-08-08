@@ -30,7 +30,12 @@ function App() {
     awaitData();
   }, []);
 
-  function filterHandler(category) {
+  function filterHandler(category, reset = false) {
+    if(reset) {
+      setProductList(meteoraDB.products)
+      return
+    }
+
     let newList = meteoraDB.products.filter(product => (product.category == category));
     setProductList(newList)
     newList = [];
@@ -43,7 +48,10 @@ function App() {
       <div className='app-wrapper'>
         <Cabecalho />
         <Banner />
-        <Categories meteoraDB={categoryList} filterHandler={filterHandler} />
+        <Categories 
+          meteoraDB={categoryList} 
+          filterHandler={filterHandler} 
+        />
         <Products meteoraDB={productList} />
         <Facilities />
         <NewsLetter />

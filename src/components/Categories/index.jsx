@@ -12,7 +12,7 @@ export const Categories = ({ meteoraDB, filterHandler }) => {
             <ul className={styles.categoryList}>
                 {
                     meteoraDB.map(item =>
-                        (<Category {...item} key={item.id} filterHandler={filterHandler} />))
+                        (<Category {...item} key={item.id} filterHandler={filterHandler}/>))
                 }
             </ul>
         </section>
