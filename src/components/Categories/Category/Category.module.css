@@ -18,6 +18,10 @@
   border-color: black;
 }
 
+.true {
+  border-top: 2px solid blueviolet;
+}
+
 .category h3 {
   font-size: 16px;
   font-weight: 500;

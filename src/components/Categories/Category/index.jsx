@@ -8,7 +8,7 @@ export const Category = ({ screen, title, path, category, filterHandler}) => {
 
     return (
         <li 
-            className={`${styles[screen]} ${styles.category}`} 
+            className={`${styles[screen]} ${styles.category} ${styles[selected]}`} 
             onClick={() => { 
                 setSelected(!selected);
                 if(selected) {
