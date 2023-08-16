@@ -42,8 +42,7 @@ function App() {
 
   function filterProductsInput(value) {
 
-    const filteredProductList = [];
-
+    const filteredProductList = []; 
     if (value === '') {
       awaitData();
       return;
@@ -54,7 +53,7 @@ function App() {
         filteredProductList.push(productList[i]);
       }
     }
-    //console.log(filteredPokemon);
+    
     setProductList(filteredProductList);
 
   }
