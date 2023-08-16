@@ -41,20 +41,25 @@ function App() {
   }
 
   function filterProductsInput(value) {
+    setProductList(meteoraDB.products);
 
-    const filteredProductList = []; 
+    let filteredProductList = []; 
     if (value === '') {
       awaitData();
       return;
     }
 
-    for (var i in productList) {
-      if (productList[i].title.includes(value)) {
-        filteredProductList.push(productList[i]);
+    for (var i in meteoraDB.products) {
+      if (meteoraDB.products[i].title.includes(value)) {
+        filteredProductList.push(meteoraDB.products[i]);
       }
     }
     
-    setProductList(filteredProductList);
+      setProductList(filteredProductList);
+      // console.log(filteredProductList);
+      // console.log(meteoraDB.products);
+      // filteredProductList = []
+   
 
   }
 

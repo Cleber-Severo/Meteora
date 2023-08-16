@@ -15,7 +15,7 @@ function Cabecalho({ filterProductsInput }) {
     time = setTimeout(() => {
       let inputValue = e.target.value;
       let capitalizedInput = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
-  
+      console.log(capitalizedInput);
       filterProductsInput(capitalizedInput);
       
     }, 700);
