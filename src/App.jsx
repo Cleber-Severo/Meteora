@@ -17,21 +17,20 @@ function App() {
   const [meteoraDB, setMeteoraDB] = useState();
 
   useEffect(() => {
-
-    async function awaitData() {
-      const url = await fetch('https://my-json-server.typicode.com/Cleber-Severo/Meteora-db/db');
-      const data = await url.json();
-      setMeteoraDB(data);
-      setProductList(data.products);
-      setCategoryList(data.categories);
-
-    }
-
     awaitData();
   }, []);
 
+  async function awaitData() {
+    const url = await fetch('https://my-json-server.typicode.com/Cleber-Severo/Meteora-db/db');
+    const data = await url.json();
+    setMeteoraDB(data);
+    setProductList(data.products);
+    setCategoryList(data.categories);
+
+  }
+
   function filterHandler(category, reset = false) {
-    if(reset) {
+    if (reset) {
       setProductList(meteoraDB.products)
       return
     }
@@ -41,22 +40,41 @@ function App() {
     newList = [];
   }
 
- 
+  function filterProductsInput(value) {
+
+    const filteredProductList = [];
+
+    if (value === '') {
+      awaitData();
+      return;
+    }
+
+    for (var i in productList) {
+      if (productList[i].title.includes(value)) {
+        filteredProductList.push(productList[i]);
+      }
+    }
+    //console.log(filteredPokemon);
+    setProductList(filteredProductList);
+
+  }
+
+
 
   if (meteoraDB) {
     return (
       <div className='app-wrapper'>
-        <Cabecalho />
+        <Cabecalho filterProductsInput={filterProductsInput} />
         <Banner />
-        <Categories 
-          meteoraDB={categoryList} 
-          filterHandler={filterHandler} 
+        <Categories
+          meteoraDB={categoryList}
+          filterHandler={filterHandler}
         />
         <Products meteoraDB={productList} />
         <Facilities />
         <NewsLetter />
         <Footer />
-  
+
       </div>
     )
   }

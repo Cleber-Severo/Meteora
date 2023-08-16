@@ -3,7 +3,7 @@ import styles from './Cabecalho.module.css'
 import closeIcon from './marca-cruzada.png'
 import toggleIcon from './toggle-icon.png'
 
-function Cabecalho() {
+function Cabecalho({ filterProductsInput }) {
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -24,7 +24,12 @@ function Cabecalho() {
 
         </div>
         <ul className={styles.list}>
-          <li><input className={styles.search} type="text" placeholder='Digite o produto' /></li>
+          <li><input className={styles.search} type="text" placeholder='Digite o produto' onChange={(e) => {
+            let inputValue = e.target.value;
+            let capitalizedInput = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
+            
+            filterProductsInput(capitalizedInput);
+          }} /></li>
           <li><button className={styles.btn}>Buscar</button></li>
           <li><button className={styles.btn__mobile}>Search</button></li>
         </ul>
