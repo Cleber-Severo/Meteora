@@ -32,6 +32,25 @@
 .newsLetter div {
   display: flex;
   border: 1px solid #6c757d;
+
+  position: relative;
+}
+
+.newsLetter div.danger {
+  border-color: red;
+}
+
+.newsLetter div span {
+  color: red;
+  display: none;
+  font-size: .8rem;
+
+  position: absolute;
+  bottom: -1.4rem;
+}
+
+.newsLetter div.danger span {
+  display: block;
 }
 
 .newsLetter div input {
@@ -51,6 +70,10 @@
 .newsLetter div input:focus {
     outline: none;
     border: 1px solid #9353FF;
+}
+
+.newsLetter div.danger input {
+  border-color: red;
 }
 
 .modal > div > div {

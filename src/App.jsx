@@ -59,7 +59,7 @@ function App() {
 
   function selectedCategoryHandler(title) {
     console.log(categoryList);
-    categoryList.forEach( (category) => {
+    categoryList.forEach((category) => {
       if (category.title !== title) {
         category.selected = false;
         return;
@@ -69,7 +69,7 @@ function App() {
         return;
       }
       category.selected = true;
-    } )
+    })
   }
 
   if (meteoraDB) {

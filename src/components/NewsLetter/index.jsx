@@ -54,6 +54,8 @@ BootstrapDialogTitle.propTypes = {
 const NewsLetter = () => {
 
     const [open, setOpen] = React.useState(false);
+    const [validation, setValidation] = React.useState("");
+    const emailInput = React.useRef("");
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -62,13 +64,24 @@ const NewsLetter = () => {
         setOpen(false);
     };
 
+    function formValidation(e) {
+        e.preventDefault();
+        // handleClickOpen()
+    }
+
     return (
-        <form className={styles.container} onSubmit={ e => {e.preventDefault()}}>
+        <form className={styles.container} onSubmit={e => { formValidation(e) }}>
             <div className={styles.newsLetter}>
                 <p>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? <b>Cadastre-se!</b></p>
-                <div>
-                    <input type="text" placeholder='Digite Seu email' />
-                    <MeteoraBtn text='Enviar' handleClickOpen={handleClickOpen}/>
+                <div className={validation == "" ? styles.danger : styles.valid}>
+                    <input
+                        type="text"
+                        placeholder='Digite Seu email'
+                        ref={emailInput}
+                        onChange={(e) => { setValidation(e.target.value) }}
+                    />
+                    <MeteoraBtn text='Enviar' handleClickOpen={validation !== "" ? handleClickOpen : false} />
+                    <span>Insira um email válido ex: email@exemplo.com</span>
                 </div>
             </div>
 
@@ -85,7 +98,7 @@ const NewsLetter = () => {
                     </div>
                 </BootstrapDialogTitle>
                 <DialogContent dividers>
-                   Em breve você receberá novidades exclusivas da Meteora. 
+                    Em breve você receberá novidades exclusivas da Meteora.
                 </DialogContent>
 
             </BootstrapDialog>
