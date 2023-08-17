@@ -56,7 +56,6 @@ const NewsLetter = () => {
     const [open, setOpen] = React.useState(false);
     const [validation, setValidation] = React.useState("");
     const [warning, setWarning] = React.useState("valid");
-    const emailInput = React.useRef("");
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -84,7 +83,6 @@ const NewsLetter = () => {
                     <input
                         type="text"
                         placeholder='Digite Seu email'
-                        ref={emailInput}
                         onChange={(e) => { setValidation(e.target.value) }}
                     />
                     <MeteoraBtn text='Enviar' handleClickOpen={validation !== "" ? handleClickOpen : false} />
