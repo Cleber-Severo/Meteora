@@ -10,16 +10,15 @@
 
 .category {
   border: 2px solid transparent;
-  transition: all .15s ease;
 }
 
-.category:hover {
+.category.false:hover {
   cursor: pointer;
   border-color: black;
 }
 
-.true {
-  border-top: 2px solid blueviolet;
+.category.true {
+  border-color:  #9353FF;
 }
 
 .category h3 {

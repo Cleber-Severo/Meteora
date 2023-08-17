@@ -26,13 +26,12 @@ function App() {
     setMeteoraDB(data);
     setProductList(data.products);
     setCategoryList(data.categories);
-
   }
 
   function filterHandler(category, reset = false) {
     if (reset) {
       setProductList(meteoraDB.products)
-      return
+      return;
     }
 
     let newList = meteoraDB.products.filter(product => (product.category == category));
@@ -43,7 +42,7 @@ function App() {
   function filterProductsInput(value) {
     setProductList(meteoraDB.products);
 
-    let filteredProductList = []; 
+    let filteredProductList = [];
     if (value === '') {
       awaitData();
       return;
@@ -54,16 +53,24 @@ function App() {
         filteredProductList.push(meteoraDB.products[i]);
       }
     }
-    
-      setProductList(filteredProductList);
-      // console.log(filteredProductList);
-      // console.log(meteoraDB.products);
-      // filteredProductList = []
-   
 
+    setProductList(filteredProductList);
   }
 
-
+  function selectedCategoryHandler(title) {
+    console.log(categoryList);
+    categoryList.forEach( (category) => {
+      if (category.title !== title) {
+        category.selected = false;
+        return;
+      }
+      if (category.title === title && category.selected === true) {
+        category.selected = false;
+        return;
+      }
+      category.selected = true;
+    } )
+  }
 
   if (meteoraDB) {
     return (
@@ -73,6 +80,7 @@ function App() {
         <Categories
           meteoraDB={categoryList}
           filterHandler={filterHandler}
+          selectedCategoryHandler={selectedCategoryHandler}
         />
         <Products meteoraDB={productList} />
         <Facilities />
