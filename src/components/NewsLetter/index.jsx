@@ -55,6 +55,7 @@ const NewsLetter = () => {
 
     const [open, setOpen] = React.useState(false);
     const [validation, setValidation] = React.useState("");
+    const [warning, setWarning] = React.useState("valid");
     const emailInput = React.useRef("");
 
     const handleClickOpen = () => {
@@ -66,14 +67,20 @@ const NewsLetter = () => {
 
     function formValidation(e) {
         e.preventDefault();
-        // handleClickOpen()
+       
+        if (validation == "") {
+            setWarning('danger');
+            setTimeout(() => { setWarning('valid') }, 2500)
+            return;
+        }
+        setWarning('valid')    
     }
 
     return (
         <form className={styles.container} onSubmit={e => { formValidation(e) }}>
             <div className={styles.newsLetter}>
                 <p>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? <b>Cadastre-se!</b></p>
-                <div className={validation == "" ? styles.danger : styles.valid}>
+                <div className={`${styles[warning]}`}>
                     <input
                         type="text"
                         placeholder='Digite Seu email'
