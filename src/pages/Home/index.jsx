@@ -16,7 +16,6 @@ function Home() {
     if (meteoraDB) {
         return (
             <div className='app-wrapper'>
-                <Cabecalho />
                 <Banner />
                 <Categories/>
                 <Products />

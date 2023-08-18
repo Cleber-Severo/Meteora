@@ -30,7 +30,6 @@ function Cabecalho() {
       <nav className={styles.container__nav}>
         <div className={styles.rightHeader}>
           <Link to="./">
-
             <div className={styles.logo}></div>
           </Link>
           <ul className={`${styles.list__menu} ${toggleMenu ? styles.opened : styles.closed}`}>
@@ -43,7 +42,7 @@ function Cabecalho() {
                 Carrinho
               </Link>
             </li>
-            <li className={styles.item__menu}>Nossas Lojas</li>
+            <li className={styles.item__menu} >Nossas Lojas</li>
             <li className={styles.item__menu}>Novidades</li>
             <li className={styles.item__menu}>Promoções</li>
           </ul>

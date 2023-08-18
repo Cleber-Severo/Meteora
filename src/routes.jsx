@@ -10,9 +10,10 @@ function RouterApp() {
     return (
         <BrowserRouter>
             <FilterProvider>
+                <Cabecalho />
                 <Routes>
                     <Route path="/" element={<Home />} ></Route>
-                    <Route path='/cart' element={<Cart />} ></Route>
+                    <Route path='cart' element={<Cart />} ></Route>
                 </Routes>
             </FilterProvider>
             <Footer />
