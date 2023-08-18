@@ -3,10 +3,12 @@ import styles from './Cabecalho.module.css'
 import closeIcon from './marca-cruzada.png'
 import toggleIcon from './toggle-icon.png'
 import { Link } from 'react-router-dom';
+import { useFilterContext } from '../../context/Filter';
 
-function Cabecalho({ filterProductsInput }) {
+function Cabecalho() {
 
   const [toggleMenu, setToggleMenu] = useState(false);
+  const { filterProductsInput } = useFilterContext();
   let time = null;
 
   function debounceInput(e) {

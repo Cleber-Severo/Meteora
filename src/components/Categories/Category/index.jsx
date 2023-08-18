@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import styles from './Category.module.css'
+import { useFilterContext } from '../../../context/Filter';
 
-export const Category = ({ screen, title, path, category, selected, filterHandler, selectedCategoryHandler }) => {
+export const Category = ({ screen, title, path, category, selected }) => {
     const testImagejson = path;
+    const { filterHandler, selectedCategoryHandler } = useFilterContext();
 
     return (
         <li 

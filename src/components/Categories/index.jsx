@@ -2,8 +2,11 @@ import React from 'react'
 import styles from './Categories.module.css'
 import categoryData from '/src/data/categories.json'
 import { Category } from './Category';
+import { useFilterContext } from '../../context/Filter';
 
-export const Categories = ({ meteoraDB, filterHandler, selectedCategoryHandler }) => {
+export const Categories = () => {
+
+    const { categoryList } = useFilterContext();
 
     return (
         <section className={styles.categoryContainer}>
@@ -11,12 +14,10 @@ export const Categories = ({ meteoraDB, filterHandler, selectedCategoryHandler }
 
             <ul className={styles.categoryList}>
                 {
-                    meteoraDB.map(item =>
+                    categoryList.map(item =>
                     (<Category
                         {...item}
                         key={item.id}
-                        filterHandler={filterHandler}
-                        selectedCategoryHandler={selectedCategoryHandler}
                     />))
                 }
             </ul>
