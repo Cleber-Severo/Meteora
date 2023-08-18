@@ -20,20 +20,21 @@ const AsideCart = () => {
 
     return (
         <div className={styles.cart} >
-            <div className={styles.overlay}>
-                <div className={`${styles.aside} ${ asideToggle ? styles.show : styles.hide }`}>
+            
+                <div className={`${styles.aside} ${asideToggle ? styles.show : styles.hide}`}>
                     content
                 </div>
-                <IconButton 
-                    aria-label="cart" 
-                    className={styles.cartIcon}
-                    onClick={() => setAsideToggle(!asideToggle)}
-                    >
-                    <StyledBadge badgeContent={4} color="secondary" >
-                        <ShoppingCartIcon color="primary" />
-                    </StyledBadge>
-                </IconButton>
-            </div>
+        
+
+            <IconButton
+                aria-label="cart"
+                className={styles.cartIcon}
+                onClick={() => setAsideToggle(!asideToggle)}
+            >
+                <StyledBadge badgeContent={4} color="secondary" >
+                    <ShoppingCartIcon color="primary" />
+                </StyledBadge>
+            </IconButton>
         </div>
     )
 }

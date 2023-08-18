@@ -10,15 +10,16 @@
     z-index: 99;
 }
 
-.overlay {
-    background-color: rgba(77, 77, 77, 0.6);
+.overlayHide {
+    opacity: 0;
+}
 
-    width: 100%;
-    height: 100vh;
+.overlayShow {
+    opacity: 100;
 }
 
 .aside {
-    background-color: #fdfdfd;
+    background-color: rgb(217, 217, 217, 1);
 
     position: absolute;
     right: 0;
@@ -29,11 +30,11 @@
     height: 100%;
 }
 
-.hide {
+.aside.hide {
     transform: translateX(320px);
 }
 
-.show {
+.aside.show {
     transform: translateX(0);
 }
 
