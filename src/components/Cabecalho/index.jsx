@@ -2,22 +2,23 @@ import React, { useState } from 'react'
 import styles from './Cabecalho.module.css'
 import closeIcon from './marca-cruzada.png'
 import toggleIcon from './toggle-icon.png'
+import { Link } from 'react-router-dom';
 
 function Cabecalho({ filterProductsInput }) {
-  
+
   const [toggleMenu, setToggleMenu] = useState(false);
   let time = null;
 
-  function debounceInput (e) {
+  function debounceInput(e) {
 
     clearTimeout(time)
-    
+
     time = setTimeout(() => {
       let inputValue = e.target.value;
       let capitalizedInput = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
       console.log(capitalizedInput);
       filterProductsInput(capitalizedInput);
-      
+
     }, 700);
   }
 
@@ -26,10 +27,20 @@ function Cabecalho({ filterProductsInput }) {
     <header className={styles.container}>
       <nav className={styles.container__nav}>
         <div className={styles.rightHeader}>
-          <div className={styles.logo}></div>
+          <Link to="./">
+
+            <div className={styles.logo}></div>
+          </Link>
           <ul className={`${styles.list__menu} ${toggleMenu ? styles.opened : styles.closed}`}>
             <li><img src={closeIcon} onClick={() => setToggleMenu(!toggleMenu)} alt="Close menu icon" /></li>
-            <li className={styles.item__menu}>Home</li>
+            <li className={styles.item__menu}>
+              <Link to="./" className={styles.link}>Home</Link>
+            </li>
+            <li className={styles.item__menu}>
+              <Link to="./cart" className={styles.link}>
+                Carrinho
+              </Link>
+            </li>
             <li className={styles.item__menu}>Nossas Lojas</li>
             <li className={styles.item__menu}>Novidades</li>
             <li className={styles.item__menu}>Promoções</li>

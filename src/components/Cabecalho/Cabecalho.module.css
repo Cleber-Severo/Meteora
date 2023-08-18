@@ -45,7 +45,7 @@
   font-size: 16px;
 }
 
-.list__menu li:hover {
+.list__menu li:hover, .link:hover {
   cursor: pointer;
   color: #cccccc;
 }
@@ -88,6 +88,12 @@
 .rightHeader > img,
 .list__menu li img {
   display: none;
+}
+
+.link {
+      color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1023px) {
