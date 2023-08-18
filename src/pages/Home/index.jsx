@@ -10,7 +10,7 @@ import { Facilities } from '../../components/Facilities'
 import { useFilterContext } from '../../context/Filter'
 
 import styles from './Home.module.css'
-import SideCart from '../../components/SideCart'
+import AsideCart from '../../components/AsideCart'
 
 function Home() {
     const { meteoraDB } = useFilterContext();
@@ -23,7 +23,7 @@ function Home() {
                 <Products />
                 <Facilities />
                 <NewsLetter />
-                <SideCart />
+                <AsideCart />
             </div>
         )
     }

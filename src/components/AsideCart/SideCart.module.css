@@ -1,0 +1,42 @@
+.cart {
+    display: block;
+
+    position: fixed;
+    top: 0;
+    
+    height: 100vh;
+    width: 100%;
+    
+    z-index: 99;
+}
+
+.overlay {
+    background-color: rgba(77, 77, 77, 0.6);
+
+    width: 100%;
+    height: 100vh;
+}
+
+.aside {
+    background-color: #fdfdfd;
+
+    position: absolute;
+    right: 0;
+
+    transition: all .25s ease;
+
+    width: 320px;
+    height: 100%;
+}
+
+.hide {
+    transform: translateX(320px);
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.cartIcon {
+    background-color: red;
+}
