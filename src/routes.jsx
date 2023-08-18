@@ -9,7 +9,6 @@ import Cart from './pages/Cart';
 function RouterApp() {
     return (
         <BrowserRouter>
-            <Cabecalho />
             <Routes>
                 <Route path="/" element={<Home />} ></Route>
                 <Route path='/cart' element={<Cart />} ></Route>

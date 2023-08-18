@@ -74,7 +74,7 @@ function Home() {
     if (meteoraDB) {
         return (
             <div className='app-wrapper'>
-                {/* <Cabecalho filterProductsInput={filterProductsInput} /> */}
+                <Cabecalho filterProductsInput={filterProductsInput} />
                 <Banner />
                 <Categories
                     meteoraDB={categoryList}
