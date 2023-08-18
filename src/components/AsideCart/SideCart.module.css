@@ -7,7 +7,7 @@
     height: 100vh;
     width: 100%;
     
-    z-index: 99;
+    z-index: 20;
 }
 
 .overlayHide {
@@ -28,6 +28,8 @@
 
     width: 320px;
     height: 100%;
+
+    z-index: 20;
 }
 
 .aside.hide {
@@ -38,6 +40,24 @@
     transform: translateX(0);
 }
 
+.wrapper {
+    position: relative;
+}
+
 .cartIcon {
-    background-color: red;
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+
+    z-index: 10;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.closeIcon:hover {
+    cursor: pointer;
 }

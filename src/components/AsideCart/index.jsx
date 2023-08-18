@@ -4,6 +4,8 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
+import { ImCross } from "react-icons/im";
+
 import styles from './SideCart.module.css'
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -20,21 +22,31 @@ const AsideCart = () => {
 
     return (
         <div className={styles.cart} >
-            
-                <div className={`${styles.aside} ${asideToggle ? styles.show : styles.hide}`}>
-                    content
-                </div>
-        
 
-            <IconButton
-                aria-label="cart"
-                className={styles.cartIcon}
-                onClick={() => setAsideToggle(!asideToggle)}
+            <div className={`${styles.aside} ${asideToggle ? styles.show : styles.hide}`}>
+                <div className={styles.wrapper}>
+                    <ImCross
+                        className={styles.closeIcon}
+                        onClick={() => { setAsideToggle(!asideToggle) }}
+                    />
+
+                </div>
+            </div>
+
+            <div 
+                className={styles.cartIcon}   
             >
-                <StyledBadge badgeContent={4} color="secondary" >
-                    <ShoppingCartIcon color="primary" />
-                </StyledBadge>
-            </IconButton>
+                <IconButton
+                    aria-label="cart"
+
+                    onClick={() => setAsideToggle(!asideToggle)}
+                >
+                    <StyledBadge badgeContent={4} color="secondary" >
+                        <ShoppingCartIcon color="primary" />
+                    </StyledBadge>
+                </IconButton>
+
+            </div>
         </div>
     )
 }
