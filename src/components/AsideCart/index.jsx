@@ -25,6 +25,7 @@ const AsideCart = () => {
 
             <div className={`${styles.aside} ${asideToggle ? styles.show : styles.hide}`}>
                 <div className={styles.wrapper}>
+                    <span>Carrinho</span>
                     <ImCross
                         className={styles.closeIcon}
                         onClick={() => { setAsideToggle(!asideToggle) }}
