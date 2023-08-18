@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import App from './App';
 import Home from './pages/Home';
 import Cabecalho from '/src/components/Cabecalho'
 import Footer from '/src/components/Footer'
