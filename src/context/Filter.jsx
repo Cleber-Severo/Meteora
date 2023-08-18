@@ -32,7 +32,8 @@ export const FilterProvider = ({ children }) => {
                 productList,
                 setProductList,
                 categoryList,
-                setCategoryList }}>
+                setCategoryList,
+                awaitData }}>
             {children}
         </FilterContext.Provider>
     )
@@ -46,7 +47,8 @@ export const useFilterContext = () => {
             productList,
             setProductList,
             categoryList,
-            setCategoryList
+            setCategoryList,
+            awaitData
         } = useContext(FilterContext);
 
     function filterHandler(category, reset = false) {
