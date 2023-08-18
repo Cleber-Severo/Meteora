@@ -1,7 +1,6 @@
 .cart {
-    display: block;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     
     height: 100vh;
@@ -10,24 +9,17 @@
     z-index: 20;
 }
 
-.overlayHide {
-    opacity: 0;
-}
-
-.overlayShow {
-    opacity: 100;
-}
 
 .aside {
     background-color: rgb(217, 217, 217, 1);
 
-    position: absolute;
+    position: fixed;
     right: 0;
 
     transition: all .25s ease;
 
     width: 320px;
-    height: 100%;
+    height: 100vh;
 
     z-index: 20;
 }
