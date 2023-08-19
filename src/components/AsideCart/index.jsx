@@ -3,10 +3,11 @@ import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import MeteoraBtn from '../MeteoraBtn'
 
 import { ImCross } from "react-icons/im";
 
-import styles from './SideCart.module.css'
+import styles from './AsideCart.module.css'
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -25,17 +26,22 @@ const AsideCart = () => {
 
             <div className={`${styles.aside} ${asideToggle ? styles.show : styles.hide}`}>
                 <div className={styles.wrapper}>
-                    <span>Carrinho</span>
-                    <ImCross
-                        className={styles.closeIcon}
-                        onClick={() => { setAsideToggle(!asideToggle) }}
-                    />
+                    <div className={styles.aside_header}>
+                        <h2>Resumo do carrinho</h2>
+                        <ImCross
+                            className={styles.closeIcon}
+                            onClick={() => { setAsideToggle(!asideToggle) }}
+                        />
+                    </div>
+                    <div className={styles.aside_footer}>
+                        <MeteoraBtn text='Ir para carrinho' />
+                    </div>
 
                 </div>
             </div>
 
-            <div 
-                className={styles.cartIcon}   
+            <div
+                className={styles.cartIcon}
             >
                 <IconButton
                     aria-label="cart"
