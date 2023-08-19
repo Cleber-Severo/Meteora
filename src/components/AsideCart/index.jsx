@@ -9,6 +9,7 @@ import { ImCross } from "react-icons/im";
 
 import styles from './AsideCart.module.css'
 import { Link } from 'react-router-dom';
+import AsideItem from './AsideItem';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -33,6 +34,9 @@ const AsideCart = () => {
                             className={styles.closeIcon}
                             onClick={() => { setAsideToggle(!asideToggle) }}
                         />
+                    </div>
+                    <div className={styles.aside_content}>
+                        <AsideItem />
                     </div>
                     <div className={styles.aside_footer}>
                         <Link to="./cart">
