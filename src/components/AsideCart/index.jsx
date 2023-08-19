@@ -8,6 +8,7 @@ import MeteoraBtn from '../MeteoraBtn'
 import { ImCross } from "react-icons/im";
 
 import styles from './AsideCart.module.css'
+import { Link } from 'react-router-dom';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -34,7 +35,9 @@ const AsideCart = () => {
                         />
                     </div>
                     <div className={styles.aside_footer}>
-                        <MeteoraBtn text='Ir para carrinho' />
+                        <Link to="./cart">
+                            <MeteoraBtn text='Ir para carrinho' />
+                        </Link>
                     </div>
 
                 </div>
