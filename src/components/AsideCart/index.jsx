@@ -36,12 +36,12 @@ const AsideCart = () => {
                         />
                     </div>
                     <div className={styles.aside_content}>
-                        <AsideItem itemQtd={4} imgUrl={"Images/Desktop/Imagens Cards/Camiseta.png" } />
-                        <AsideItem itemQtd={2} imgUrl={"Images/Desktop/Imagens Cards/Calça.png" } />
-                        <AsideItem itemQtd={3} imgUrl={"Images/Desktop/Imagens Cards/Bolsa.png" } />
-                        <AsideItem itemQtd={1} imgUrl={"Images/Desktop/Imagens Cards/Jaqueta.png" } />
-                        <AsideItem itemQtd={2} imgUrl={"Images/Desktop/Imagens Cards/óculos.png" } />
-                        <AsideItem itemQtd={2} imgUrl={"Images/Desktop/Imagens Cards/Tenis.png" } />
+                        <AsideItem itemQtd={4} itemSize="G" imgUrl={"Images/Desktop/Imagens Cards/Camiseta.png" } />
+                        <AsideItem itemQtd={2} itemSize="M" imgUrl={"Images/Desktop/Imagens Cards/Calça.png" } />
+                        <AsideItem itemQtd={3} itemSize="P" imgUrl={"Images/Desktop/Imagens Cards/Bolsa.png" } />
+                        <AsideItem itemQtd={1} itemSize="G" imgUrl={"Images/Desktop/Imagens Cards/Jaqueta.png" } />
+                        <AsideItem itemQtd={2} itemSize="G" imgUrl={"Images/Desktop/Imagens Cards/óculos.png" } />
+                        <AsideItem itemQtd={2} itemSize="M" imgUrl={"Images/Desktop/Imagens Cards/Tenis.png" } />
                        
                     </div>
                     <div className={styles.aside_footer}>
