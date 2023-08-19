@@ -2,15 +2,28 @@ import { FiTrash2 } from "react-icons/Fi";
 
 import styles from './AsideItem.module.css'
 
-const AsideItem = () => {
-  return (
-      <article>
-          <img src="Images/Desktop/Imagens Cards/Camiseta.png" alt=""></img>
-          <p>Camiseta Conforto</p>
-          <span>R$ 70,00</span>
-          <FiTrash2 />
-      </article>
-  )
+const AsideItem = ({ imgUrl, itemQtd }) => {
+    return (
+        <article className={styles.aside_item}>
+            <img src={imgUrl} alt=""></img>
+            <div className={styles.item_info}>
+                <p>Camiseta Conforto</p>
+
+                <div className={styles.description}>
+                    <span>M</span>
+                    <span> - </span>
+                    <span>R$ 70,00</span>
+                </div>
+                <div className={styles.quantity}>
+                    <span>+</span>
+                    <span>{itemQtd}</span>
+                    <span>-</span>
+                </div>
+
+            </div>
+            <FiTrash2 className={styles.deleteIcon} />
+        </article>
+    )
 }
 
 export default AsideItem

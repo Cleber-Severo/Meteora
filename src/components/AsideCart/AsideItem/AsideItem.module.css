@@ -1,0 +1,62 @@
+.aside_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.aside_item:not(:last-child) {
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.aside_item img {
+  width: 70px;
+
+  object-fit: contain;
+}
+
+.aside_item div.item_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside_item div.item_info p {
+  font-weight: 600;
+}
+
+.aside_item div.quantity {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 4px;
+
+    width: 50%;
+}
+
+.aside_item div.quantity span:first-child,
+.aside_item div.quantity span:last-child {
+  
+  width: 1rem;
+  padding: 2px;
+  text-align: center;
+}
+
+.aside_item div.quantity span:first-child:hover,
+.aside_item div.quantity span:last-child:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+.deleteIcon {
+    color:  #ff6666;
+}
+
+.deleteIcon:hover {
+    cursor: pointer;
+}
