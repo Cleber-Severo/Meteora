@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Cabecalho from '/src/components/Cabecalho'
 import Footer from '/src/components/Footer'
 import Cart from './pages/Cart';
-import { FilterContext, FilterProvider } from './context/Filter';
+import {  FilterProvider } from './context/Filter';
 
 
 function RouterApp() {
