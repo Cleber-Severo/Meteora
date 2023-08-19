@@ -41,7 +41,7 @@ const AsideCart = () => {
                         <AsideItem itemQtd={3} imgUrl={"Images/Desktop/Imagens Cards/Bolsa.png" } />
                         <AsideItem itemQtd={1} imgUrl={"Images/Desktop/Imagens Cards/Jaqueta.png" } />
                         <AsideItem itemQtd={2} imgUrl={"Images/Desktop/Imagens Cards/óculos.png" } />
-                        
+                        <AsideItem itemQtd={2} imgUrl={"Images/Desktop/Imagens Cards/Tenis.png" } />
                        
                     </div>
                     <div className={styles.aside_footer}>

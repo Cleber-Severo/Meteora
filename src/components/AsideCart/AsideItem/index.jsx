@@ -15,9 +15,9 @@ const AsideItem = ({ imgUrl, itemQtd }) => {
                     <span>R$ 70,00</span>
                 </div>
                 <div className={styles.quantity}>
-                    <span>+</span>
-                    <span>{itemQtd}</span>
                     <span>-</span>
+                    <span>{itemQtd}</span>
+                    <span>+</span>
                 </div>
 
             </div>
