@@ -81,13 +81,6 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                 <p>{description}</p>
                 <h3>R$ {pricing}</h3>
                 <MeteoraBtn text='Ver Mais' handleClickOpen={handleClickOpen} />
-                <button
-                    onClick={() => {
-                        setCart(previousCart =>
-                            [...previousCart, { path, title, pricing, description, screen }])
-                    }}
-                >
-                    Context Test</button>
             </div>
 
             <BootstrapDialog
