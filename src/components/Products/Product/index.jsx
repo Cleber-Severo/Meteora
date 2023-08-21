@@ -58,7 +58,7 @@ BootstrapDialogTitle.propTypes = {
 export const Product = ({ path, title, pricing, description, screen }) => {
 
     const [open, setOpen] = React.useState(false);
-    const { carrinho, setCarrinho } = React.useContext(CartContext)
+    const { cart, setCart } = React.useContext(CartContext)
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -66,6 +66,11 @@ export const Product = ({ path, title, pricing, description, screen }) => {
     const handleClose = () => {
         setOpen(false);
     };
+
+    function addCart() {
+        setCart(previousCart =>
+            [...previousCart, { path, title, pricing, description, screen }])
+    }
 
 
     return (
@@ -76,6 +81,13 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                 <p>{description}</p>
                 <h3>R$ {pricing}</h3>
                 <MeteoraBtn text='Ver Mais' handleClickOpen={handleClickOpen} />
+                <button
+                    onClick={() => {
+                        setCart(previousCart =>
+                            [...previousCart, { path, title, pricing, description, screen }])
+                    }}
+                >
+                    Context Test</button>
             </div>
 
             <BootstrapDialog
@@ -91,7 +103,7 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                     </div>
                 </BootstrapDialogTitle>
                 <DialogContent dividers>
-                    <form className={styles.modalContent}>
+                    <form className={styles.modalContent} onSubmit={(e) => { e.preventDefault() }} >
                         <img src={path} alt="" />
                         <div>
                             <div className={styles.modalProductInfo}>
@@ -101,7 +113,11 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                                 <span>Vendido e entregue por Riachuelo</span>
                             </div>
                             <ProductModalColorSize />
-                            <MeteoraBtn text='Adicionar à sacola' />
+                            <MeteoraBtn
+                                text='Adicionar à sacola'
+                                isCart={true}
+                                addCart={addCart}
+                               />
                         </div>
                     </form>
                 </DialogContent>
