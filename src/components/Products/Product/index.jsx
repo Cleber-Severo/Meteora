@@ -67,9 +67,21 @@ export const Product = ({ path, title, pricing, description, screen }) => {
         setOpen(false);
     };
 
-    function addProduct() {
-        setCart(previousCart =>
-            [...previousCart, { path, title, pricing, description, screen }])
+    function addProduct(newPoduct) {
+
+        const alreadyAdded = cart.some(cartItem => cartItem.title === newPoduct.title);
+
+        if (!alreadyAdded) {
+            newPoduct.quantity = 1;
+            return setCart(previousCart =>
+                [...previousCart, newPoduct])
+        }
+
+        setCart(previousCart => previousCart.map(cartItem => {
+            if (cartItem.title === newPoduct.title) cartItem.quantity += 1;
+            return cartItem
+        }) )
+
     }
 
 
@@ -80,7 +92,7 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <h3>R$ {pricing}</h3>
-               
+
                 <MeteoraBtn>
                     <button onClick={() => { handleClickOpen() }} >Ver mais </button>
                 </MeteoraBtn>
@@ -109,12 +121,12 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                                 <span>Vendido e entregue por Riachuelo</span>
                             </div>
                             <ProductModalColorSize />
-                            {/* <MeteoraBtn
-                                text='Adicionar à sacola'
-                                isCart={true}
-                                addProduct={addProduct}
-                               > */}
-                            {/* <MeteoraBtn>Adicionar à sacola</MeteoraBtn> */}
+
+                            <MeteoraBtn>
+                                <button onClick={() => { addProduct({path, title, pricing, description, screen}) }}>
+                                    Adicionar à sacola
+                                </button>
+                            </MeteoraBtn>
                         </div>
                     </form>
                 </DialogContent>

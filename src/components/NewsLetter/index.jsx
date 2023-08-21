@@ -73,7 +73,10 @@ const NewsLetter = () => {
             return;
         }
         setWarning('valid')    
+        handleClickOpen()
     }
+
+
 
     return (
         <form className={styles.container} onSubmit={e => { formValidation(e) }}>
@@ -85,7 +88,11 @@ const NewsLetter = () => {
                         placeholder='Digite Seu email'
                         onChange={(e) => { setValidation(e.target.value) }}
                     />
-                    <MeteoraBtn text='Enviar' handleClickOpen={validation !== "" ? handleClickOpen : false} />
+                    <MeteoraBtn>
+                        <button>
+                            Enviar
+                        </button>
+                    </MeteoraBtn>
                     <span>Insira um email válido ex: email@exemplo.com</span>
                 </div>
             </div>
