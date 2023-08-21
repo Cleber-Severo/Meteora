@@ -14,7 +14,7 @@ import Typography from '@mui/material/Typography';
 import styles from './Product.module.css'
 import MeteoraBtn from '../../MeteoraBtn'
 import ProductModalColorSize from '../ProductModalColorSize';
-import { CartContext } from '../../../context/Cart';
+import { useCartContext } from '../../../context/Cart';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -55,10 +55,10 @@ BootstrapDialogTitle.propTypes = {
 };
 
 
-export const Product = ({ path, title, pricing, description, screen }) => {
+export const Product = ({ path, title, pricing, description, screen, id }) => {
 
     const [open, setOpen] = React.useState(false);
-    const { cart, setCart } = React.useContext(CartContext)
+    const { addProduct } = useCartContext()
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -66,24 +66,6 @@ export const Product = ({ path, title, pricing, description, screen }) => {
     const handleClose = () => {
         setOpen(false);
     };
-
-    function addProduct(newPoduct) {
-
-        const alreadyAdded = cart.some(cartItem => cartItem.title === newPoduct.title);
-
-        if (!alreadyAdded) {
-            newPoduct.quantity = 1;
-            return setCart(previousCart =>
-                [...previousCart, newPoduct])
-        }
-
-        setCart(previousCart => previousCart.map(cartItem => {
-            if (cartItem.title === newPoduct.title) cartItem.quantity += 1;
-            return cartItem
-        }) )
-
-    }
-
 
     return (
         <article className={`${styles[screen]} ${styles.product}`}>
@@ -123,7 +105,7 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                             <ProductModalColorSize />
 
                             <MeteoraBtn>
-                                <button onClick={() => { addProduct({path, title, pricing, description, screen}) }}>
+                                <button onClick={() => { addProduct({path, title, pricing, description, screen, id}) }}>
                                     Adicionar à sacola
                                 </button>
                             </MeteoraBtn>

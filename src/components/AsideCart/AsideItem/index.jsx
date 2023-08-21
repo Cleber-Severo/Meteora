@@ -1,23 +1,27 @@
 import { FiTrash2 } from "react-icons/fi";
 
 import styles from './AsideItem.module.css'
+import { useCartContext } from "../../../context/Cart";
 
-const AsideItem = ({ imgUrl, itemQtd, itemSize }) => {
+const AsideItem = ({ path, title, pricing, description, screen, id, quantity }) => {
+    
+    const { addProduct } = useCartContext();
+
     return (
         <article className={styles.aside_item}>
-            <img src={imgUrl} alt=""></img>
+            <img src={path} alt=""></img>
             <div className={styles.item_info}>
-                <p>Camiseta Conforto</p>
+                <p>{title}</p>
 
-                <div className={styles.description}>
-                    <span>{itemSize}</span>
+                <div className={styles.itemDescription}>
+                    <span>gg</span>
                     <span> - </span>
-                    <span>R$ 70,00</span>
+                    <span>R${pricing}</span>
                 </div>
                 <div className={styles.quantity}>
                     <span>-</span>
-                    <span>{itemQtd}</span>
-                    <span>+</span>
+                    <span>{quantity}</span>
+                    <span onClick={() => { addProduct({ path, title, pricing, description, screen, id }) }} >+</span>
                 </div>
 
             </div>

@@ -10,6 +10,7 @@ import { ImCross } from "react-icons/im";
 import styles from './AsideCart.module.css'
 import { Link } from 'react-router-dom';
 import AsideItem from './AsideItem';
+import { useCartContext } from '../../context/Cart';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -21,34 +22,36 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const AsideCart = () => {
-    const [asideToggle, setAsideToggle] = useState(false)
+    const [asideToggle, setAsideToggle] = useState(false);
+    const { cart } = useCartContext();
+    console.log(cart);
 
     return (
         <div className={styles.cart} >
 
             <div className={`${styles.aside} ${asideToggle ? styles.show : styles.hide}`}>
                 <div className={styles.wrapper}>
-                    
-                        <div className={styles.aside_header}>
-                            <h2>Resumo do pedido</h2>
-                            <ImCross
-                                className={styles.closeIcon}
-                                onClick={() => { setAsideToggle(!asideToggle) }}
-                            />
-                        </div>
-                        <div className={styles.aside_content}>
-                            <AsideItem itemQtd={4} itemSize="G" imgUrl={"Images/Desktop/Imagens Cards/Camiseta.png"} />
-                            <AsideItem itemQtd={2} itemSize="M" imgUrl={"Images/Desktop/Imagens Cards/Calça.png"} />
-                            <AsideItem itemQtd={3} itemSize="P" imgUrl={"Images/Desktop/Imagens Cards/Bolsa.png"} />
-                            <AsideItem itemQtd={1} itemSize="G" imgUrl={"Images/Desktop/Imagens Cards/Jaqueta.png"} />
-                            <AsideItem itemQtd={2} itemSize="G" imgUrl={"Images/Desktop/Imagens Cards/óculos.png"} />
-                            <AsideItem itemQtd={2} itemSize="M" imgUrl={"Images/Desktop/Imagens Cards/Tenis.png"} />
 
-                        </div>
-                    
+                    <div className={styles.aside_header}>
+                        <h2>Resumo do pedido</h2>
+                        <ImCross
+                            className={styles.closeIcon}
+                            onClick={() => { setAsideToggle(!asideToggle) }}
+                        />
+                    </div>
+                    <div className={styles.aside_content}>
+
+                        {   
+                            cart.map(product => (<AsideItem key={product.id} {...product} itemSize="M" />))
+                        }
+
+                    </div>
+
                     <div className={styles.aside_footer}>
                         <Link to="./cart">
-                            <MeteoraBtn text='Ir para carrinho' />
+                            <MeteoraBtn>
+                                <button>Ir para carrinho</button>
+                            </MeteoraBtn>
                         </Link>
                     </div>
 
