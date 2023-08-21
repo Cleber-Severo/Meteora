@@ -15,6 +15,12 @@ export const CartProvider = ({ children }) => {
 export function useCartContext() {
     const { cart, setCart } = useContext(CartContext);
 
+    function changeQuantity(id, quantity) {
+        return cart.map(cartItem => {
+            if (cartItem.id === id) cartItem.quantity += quantity;
+            return cartItem })
+    }
+   
     function addProduct(newPoduct) {
         const alreadyAdded = cart.some(cartItem => cartItem.title === newPoduct.title);
 
@@ -23,15 +29,23 @@ export function useCartContext() {
             return setCart(previousCart =>
                 [...previousCart, newPoduct])
         }
-        setCart(previousCart => previousCart.map(cartItem => {
-            if (cartItem.title === newPoduct.title) cartItem.quantity += 1;
-            return cartItem
-        }))
+        setCart(changeQuantity(newPoduct.id, 1))
+    }
+
+    function removeProduct(id) {
+        const product = cart.find(cartItem => cartItem.id === id );
+        const isLast = product.quantity === 1;
+
+        if (isLast) {
+            return setCart(previousCart => previousCart.filter(cartItem => cartItem.id !== id) )
+        }
+        setCart( changeQuantity(id, -1) )
     }
 
     return {
         cart,
         setCart,
-        addProduct
+        addProduct,
+        removeProduct
     }
 }

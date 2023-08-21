@@ -5,7 +5,7 @@ import { useCartContext } from "../../../context/Cart";
 
 const AsideItem = ({ path, title, pricing, description, screen, id, quantity }) => {
     
-    const { addProduct } = useCartContext();
+    const { addProduct, removeProduct } = useCartContext();
 
     return (
         <article className={styles.aside_item}>
@@ -19,7 +19,7 @@ const AsideItem = ({ path, title, pricing, description, screen, id, quantity }) 
                     <span>R${pricing}</span>
                 </div>
                 <div className={styles.quantity}>
-                    <span>-</span>
+                    <span onClick={() => removeProduct(id) } >-</span>
                     <span>{quantity}</span>
                     <span onClick={() => { addProduct({ path, title, pricing, description, screen, id }) }} >+</span>
                 </div>
