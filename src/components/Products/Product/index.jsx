@@ -67,7 +67,7 @@ export const Product = ({ path, title, pricing, description, screen }) => {
         setOpen(false);
     };
 
-    function addCart() {
+    function addProduct() {
         setCart(previousCart =>
             [...previousCart, { path, title, pricing, description, screen }])
     }
@@ -80,7 +80,10 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <h3>R$ {pricing}</h3>
-                <MeteoraBtn text='Ver Mais' handleClickOpen={handleClickOpen} />
+               
+                <MeteoraBtn>
+                    <button onClick={() => { handleClickOpen() }} >Ver mais </button>
+                </MeteoraBtn>
             </div>
 
             <BootstrapDialog
@@ -106,11 +109,12 @@ export const Product = ({ path, title, pricing, description, screen }) => {
                                 <span>Vendido e entregue por Riachuelo</span>
                             </div>
                             <ProductModalColorSize />
-                            <MeteoraBtn
+                            {/* <MeteoraBtn
                                 text='Adicionar à sacola'
                                 isCart={true}
-                                addCart={addCart}
-                               />
+                                addProduct={addProduct}
+                               > */}
+                            {/* <MeteoraBtn>Adicionar à sacola</MeteoraBtn> */}
                         </div>
                     </form>
                 </DialogContent>

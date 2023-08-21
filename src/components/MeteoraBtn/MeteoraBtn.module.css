@@ -1,4 +1,4 @@
-.btn {
+.btn button {
     color:  white;
     background-color: #9353FF;
 
@@ -11,7 +11,7 @@
     transition: all .25s ease;
 }
 
-.btn:hover {
+.btn button:hover {
     background-color: #7e33ff;
     cursor: pointer;
 }

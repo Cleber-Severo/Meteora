@@ -7,7 +7,7 @@
   height: 422px;
 }
 
-.product div {
+.product > div {
   padding: 16px;
 }
 
