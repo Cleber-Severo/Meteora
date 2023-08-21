@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import styles from './Product.module.css'
 import MeteoraBtn from '../../MeteoraBtn'
 import ProductModalColorSize from '../ProductModalColorSize';
+import { CartContext } from '../../../context/Cart';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -57,6 +58,7 @@ BootstrapDialogTitle.propTypes = {
 export const Product = ({ path, title, pricing, description, screen }) => {
 
     const [open, setOpen] = React.useState(false);
+    const { carrinho, setCarrinho } = React.useContext(CartContext)
 
     const handleClickOpen = () => {
         setOpen(true);

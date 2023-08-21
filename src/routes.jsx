@@ -3,7 +3,8 @@ import Home from './pages/Home';
 import Cabecalho from '/src/components/Cabecalho'
 import Footer from '/src/components/Footer'
 import Cart from './pages/Cart';
-import {  FilterProvider } from './context/Filter';
+import { FilterProvider } from './context/Filter';
+import { CartProvider } from './context/Cart';
 
 
 function RouterApp() {
@@ -11,10 +12,12 @@ function RouterApp() {
         <BrowserRouter>
             <FilterProvider>
                 <Cabecalho />
-                <Routes>
-                    <Route path="/" element={<Home />} ></Route>
-                    <Route path='cart' element={<Cart />} ></Route>
-                </Routes>
+                <CartProvider>
+                    <Routes>
+                        <Route path="/" element={<Home />} ></Route>
+                        <Route path='cart' element={<Cart />} ></Route>
+                    </Routes>
+                </CartProvider>
             </FilterProvider>
             <Footer />
         </BrowserRouter>
