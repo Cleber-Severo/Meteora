@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
@@ -25,6 +25,9 @@ const AsideCart = () => {
     const [asideToggle, setAsideToggle] = useState(false);
     const { cart, qtdProducts } = useCartContext();
     
+    useEffect( () => { 
+        if(qtdProducts == 0) setAsideToggle(false)
+     }, [qtdProducts] )
 
     return (
         <div className={styles.cart} >
