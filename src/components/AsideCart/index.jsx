@@ -66,7 +66,7 @@ const AsideCart = () => {
                     disabled={qtdProducts === 0}
                 >
                     <StyledBadge badgeContent={qtdProducts} color="secondary" >
-                        <ShoppingCartIcon color="primary" />
+                        <ShoppingCartIcon color={qtdProducts > 0 ? "primary" : "danger"} />
                     </StyledBadge>
                 </IconButton>
 
