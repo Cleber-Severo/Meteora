@@ -21,6 +21,7 @@
 .aside_item div.item_info {
     display: flex;
     flex-direction: column;
+    width: 45%;
 }
 
 .aside_item div.item_info p {
@@ -36,7 +37,7 @@
 
     margin-top: 4px;
 
-    width: 50%;
+    width: 50px;
 }
 
 .aside_item div.quantity span:first-child,
@@ -55,6 +56,7 @@
 
 .deleteIcon {
     color:  #ff6666;
+    padding-right: .5rem;
 }
 
 .deleteIcon:hover {
