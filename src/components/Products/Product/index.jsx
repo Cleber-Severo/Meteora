@@ -63,6 +63,7 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
 
     const [colorValue, setColorValue] = useState("");
     const [sizeValue, setSizeValue] = useState("");
+    const [productFormErr, setProductFormErr] = useState('valid');
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -70,6 +71,18 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
     const handleClose = () => {
         setOpen(false);
     };
+
+    function validateProductForm(e) {
+        e.preventDefault()
+
+        if (colorValue === "" || sizeValue === "") {
+            setProductFormErr("notValid")
+            setTimeout(() => { setProductFormErr('valid') }, 2500)
+            return;
+        }
+        addProduct({ path, title, pricing, description, screen, id })
+
+    }
 
     return (
         <article className={`${styles[screen]} ${styles.product}`}>
@@ -97,7 +110,7 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
                     </div>
                 </BootstrapDialogTitle>
                 <DialogContent dividers>
-                    <form className={styles.modalContent} onSubmit={(e) => { e.preventDefault() }} >
+                    <form className={styles.modalContent} onSubmit={(e) => { validateProductForm(e)}} >
                         <img src={path} alt="" />
                         <div>
                             <div className={styles.modalProductInfo}>
@@ -109,14 +122,15 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
 
                             <ProductModalColorSize
                                setColorValue={setColorValue}
-                               setSizeValue={setSizeValue} 
+                               setSizeValue={setSizeValue}
+                                productFormErr={productFormErr}
                             />
 
                             <span>{colorValue}</span>
                             <span>{sizeValue}</span>
 
                             <MeteoraBtn>
-                                <button onClick={() => { addProduct({path, title, pricing, description, screen, id}) }}>
+                                <button>
                                     Adicionar à sacola
                                 </button>
                             </MeteoraBtn>

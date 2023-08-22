@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './ProductModalColorSize.module.css'
 
-const ProductModalColorSize = ({ setColorValue, setSizeValue }) => {
+const ProductModalColorSize = ({ setColorValue, setSizeValue, productFormErr }) => {
 
   return (
     <div className={styles.formContainer}>
@@ -48,6 +48,7 @@ const ProductModalColorSize = ({ setColorValue, setSizeValue }) => {
           </div>
         </div>
       </div >
+      <span className={styles[productFormErr]}>**preencha cor e tamanho</span>
     </div >
   )
 }

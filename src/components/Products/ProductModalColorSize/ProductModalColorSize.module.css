@@ -32,7 +32,7 @@
 
 .radioContainer > div div label {
   color: #212529;
-  
+
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -40,20 +40,32 @@
 }
 
 .radioContainer > div div input {
-  
   outline: none;
   appearance: none;
 
   border-radius: 50%;
-  border: 1px solid #DEE2E6;
+  border: 1px solid #dee2e6;
 
   width: 13px;
   height: 13px;
 }
 
-.radioContainer > div div input:checked  {
-  background-image: url('/Images/Radio-Checked-Focus.svg');
+.radioContainer > div div input:checked {
+  background-image: url("/Images/Radio-Checked-Focus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.formContainer span {
+  font-size: .9rem;
+}
+
+.valid {
+  opacity: 0;
+}
+
+.notValid {
+  color: red;
+  opacity: 100;
 }
