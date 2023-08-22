@@ -5,7 +5,7 @@ import { useCartContext } from "../../../context/Cart";
 
 const AsideItem = ({ path, title, pricing, description, screen, id, quantity }) => {
     
-    const { addProduct, removeProduct } = useCartContext();
+    const { addProduct, removeProduct, deleteProduct } = useCartContext();
 
     return (
         <article className={styles.aside_item}>
@@ -25,7 +25,10 @@ const AsideItem = ({ path, title, pricing, description, screen, id, quantity }) 
                 </div>
 
             </div>
-            <FiTrash2 className={styles.deleteIcon} />
+            <FiTrash2 
+                className={styles.deleteIcon}
+                onClick={ () => { deleteProduct(id) } }
+            />
         </article>
     )
 }

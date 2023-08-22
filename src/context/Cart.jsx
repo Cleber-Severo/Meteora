@@ -54,6 +54,12 @@ export function useCartContext() {
         setCart( changeQuantity(id, -1) )
     }
 
+    function deleteProduct(id) {
+        const removedItem = cart.find(cartItem => cartItem.id === id)
+
+        return setCart( newCart => newCart.filter( cartItem => cartItem.id !== removedItem.id  ) )
+    }
+
     useEffect(() => {
         const newQtdProducts = cart.reduce((counter, product) => counter + product.quantity, 0);
         setQtdProducts(newQtdProducts)
@@ -64,6 +70,7 @@ export function useCartContext() {
         setCart,
         addProduct,
         removeProduct,
-        qtdProducts
+        qtdProducts,
+        deleteProduct
     }
 }
