@@ -62,8 +62,8 @@ const AsideCart = () => {
             >
                 <IconButton
                     aria-label="cart"
-
                     onClick={() => setAsideToggle(!asideToggle)}
+                    disabled={qtdProducts === 0}
                 >
                     <StyledBadge badgeContent={qtdProducts} color="secondary" >
                         <ShoppingCartIcon color="primary" />
