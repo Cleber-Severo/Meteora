@@ -61,8 +61,8 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
     const [open, setOpen] = React.useState(false);
     const { addProduct } = useCartContext()
 
-    const [colorValue, setColorValue] = useState("");
-    const [sizeValue, setSizeValue] = useState("");
+    const [color, setColor] = useState("");
+    const [size, setSize] = useState("");
     const [productFormErr, setProductFormErr] = useState('valid');
 
     const handleClickOpen = () => {
@@ -75,12 +75,14 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
     function validateProductForm(e) {
         e.preventDefault()
 
-        if (colorValue === "" || sizeValue === "") {
+        if (color === "" || size === "") {
             setProductFormErr("notValid")
             setTimeout(() => { setProductFormErr('valid') }, 2500)
             return;
         }
-        addProduct({ path, title, pricing, description, screen, id })
+        addProduct({ path, title, pricing, description, screen, id, color,size });
+        setColor("")
+        setSize("")
 
     }
 
@@ -121,13 +123,10 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
                             </div>
 
                             <ProductModalColorSize
-                               setColorValue={setColorValue}
-                               setSizeValue={setSizeValue}
+                               setColor={setColor}
+                               setSize={setSize}
                                 productFormErr={productFormErr}
                             />
-
-                            <span>{colorValue}</span>
-                            <span>{sizeValue}</span>
 
                             <MeteoraBtn>
                                 <button>
