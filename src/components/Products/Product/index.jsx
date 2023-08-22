@@ -15,6 +15,7 @@ import styles from './Product.module.css'
 import MeteoraBtn from '../../MeteoraBtn'
 import ProductModalColorSize from '../ProductModalColorSize';
 import { useCartContext } from '../../../context/Cart';
+import { useState } from 'react';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -60,6 +61,9 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
     const [open, setOpen] = React.useState(false);
     const { addProduct } = useCartContext()
 
+    const [colorValue, setColorValue] = useState("");
+    const [sizeValue, setSizeValue] = useState("");
+
     const handleClickOpen = () => {
         setOpen(true);
     };
@@ -102,7 +106,14 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
                                 <h3>R$ {pricing}</h3>
                                 <span>Vendido e entregue por Riachuelo</span>
                             </div>
-                            <ProductModalColorSize />
+
+                            <ProductModalColorSize
+                               setColorValue={setColorValue}
+                               setSizeValue={setSizeValue} 
+                            />
+
+                            <span>{colorValue}</span>
+                            <span>{sizeValue}</span>
 
                             <MeteoraBtn>
                                 <button onClick={() => { addProduct({path, title, pricing, description, screen, id}) }}>
