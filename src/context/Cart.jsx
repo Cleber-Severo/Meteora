@@ -7,57 +7,59 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const [qtdProducts, setQtdProducts] = useState(0)
     return (
-        <CartContext.Provider 
-            value={{ 
-                    cart, 
-                    setCart,
-                    qtdProducts,
-                    setQtdProducts 
-                }} >
-            { children }
+        <CartContext.Provider
+            value={{
+                cart,
+                setCart,
+                qtdProducts,
+                setQtdProducts
+            }} >
+            {children}
         </CartContext.Provider>
     )
 }
 
 export function useCartContext() {
-    const { 
-            cart, 
-            setCart, 
-            qtdProducts, 
-            setQtdProducts 
-        } = useContext(CartContext);
+    const {
+        cart,
+        setCart,
+        qtdProducts,
+        setQtdProducts
+    } = useContext(CartContext);
 
     function changeQuantity(id, quantity) {
         return cart.map(cartItem => {
-            if (cartItem.id === id) cartItem.quantity += quantity;
-            return cartItem })
+            if (cartItem.cartItemId === id) cartItem.quantity += quantity;
+            return cartItem
+        })
     }
-   
+
     function addProduct(newPoduct) {
-        const alreadyAdded = cart.some(cartItem => cartItem.title === newPoduct.title);
+        const alreadyAdded = cart.some(cartItem => cartItem.cartItemId === newPoduct.cartItemId )
 
         if (!alreadyAdded) {
             newPoduct.quantity = 1;
+            console.log('not new');
             return setCart(previousCart =>
                 [...previousCart, newPoduct])
         }
-        setCart(changeQuantity(newPoduct.id, 1))
+        setCart(changeQuantity(newPoduct.cartItemId, 1))
     }
 
     function removeProduct(id) {
-        const product = cart.find(cartItem => cartItem.id === id );
+        const product = cart.find(cartItem => cartItem.cartItemId === id);
         const isLast = product.quantity === 1;
 
         if (isLast) {
-            return setCart(previousCart => previousCart.filter(cartItem => cartItem.id !== id) )
+            return setCart(previousCart => previousCart.filter(cartItem => cartItem.cartItemId !== id))
         }
-        setCart( changeQuantity(id, -1) )
+        setCart(changeQuantity(id, -1))
     }
 
-    function deleteProduct(id) {
-        const removedItem = cart.find(cartItem => cartItem.id === id)
+    function deleteProduct(id, size) {
+        const removedItem = cart.find(cartItem => cartItem.cartItemId === id )
 
-        return setCart( newCart => newCart.filter( cartItem => cartItem.id !== removedItem.id  ) )
+        return setCart(newCart => newCart.filter(cartItem => cartItem.cartItemId !== removedItem.cartItemId ))
     }
 
     useEffect(() => {

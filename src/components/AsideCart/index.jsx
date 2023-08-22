@@ -45,7 +45,7 @@ const AsideCart = () => {
                     <div className={styles.aside_content}>
 
                         {   
-                            cart.map(product => (<AsideItem key={product.id} {...product} itemSize="M" />))
+                            cart.map(product => (<AsideItem key={product.cartItemId} {...product} />))
                         }
                     </div>
 

@@ -26,24 +26,24 @@ const ProductModalColorSize = ({ setColor, setSize, productFormErr }) => {
         <h3>Tamanhos:</h3>
         <div>
           <div>
-            <input type="radio" name='sizesName' id='ppSize' value='pp' onChange={(e) => {setSize(e.target.value)}} />
+            <input type="radio" name='sizesName' id='ppSize' value='PP' onChange={(e) => {setSize(e.target.value)}} />
             <label htmlFor="ppSize">PP</label>
           </div>
 
           <div>
-            <input type="radio" name='sizesName' id='pSize' value='p' onChange={(e) => {setSize(e.target.value)}} />
+            <input type="radio" name='sizesName' id='pSize' value='P' onChange={(e) => {setSize(e.target.value)}} />
             <label htmlFor="pSize">P</label>
           </div>
           <div>
-            <input type="radio" name='sizesName' id='mSize' value='m' onChange={(e) => {setSize(e.target.value)}} />
+            <input type="radio" name='sizesName' id='mSize' value='M' onChange={(e) => {setSize(e.target.value)}} />
             <label htmlFor="mSize">M</label>
           </div>
           <div>
-            <input type="radio" name='sizesName' id='gSize' value='g' onChange={(e) => {setSize(e.target.value)}} />
+            <input type="radio" name='sizesName' id='gSize' value='G' onChange={(e) => {setSize(e.target.value)}} />
             <label htmlFor="gSize">G</label>
           </div>
           <div>
-            <input type="radio" name='sizesName' id='ggSize' value='gg' onChange={(e) => {setSize(e.target.value)}} />
+            <input type="radio" name='sizesName' id='ggSize' value='GG' onChange={(e) => {setSize(e.target.value)}} />
             <label htmlFor="ggSize">GG</label>
           </div>
         </div>

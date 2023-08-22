@@ -56,7 +56,7 @@ BootstrapDialogTitle.propTypes = {
 };
 
 
-export const Product = ({ path, title, pricing, description, screen, id }) => {
+export const Product = ({ path, title, pricing, description, screen, id, cartItemId, setCartItemId }) => {
 
     const [open, setOpen] = React.useState(false);
     const { addProduct } = useCartContext()
@@ -80,7 +80,8 @@ export const Product = ({ path, title, pricing, description, screen, id }) => {
             setTimeout(() => { setProductFormErr('valid') }, 2500)
             return;
         }
-        addProduct({ path, title, pricing, description, screen, id, color,size });
+        addProduct({ path, title, pricing, description, screen, cartItemId, color,size });
+        setCartItemId(cartItemId+1)
         setColor("")
         setSize("")
 
