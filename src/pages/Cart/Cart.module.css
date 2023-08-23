@@ -1,0 +1,9 @@
+.cart {
+    height: calc(100vh - 54px - 84px);
+    overflow: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
