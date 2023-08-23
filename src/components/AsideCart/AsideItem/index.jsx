@@ -11,10 +11,12 @@ const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quan
         <article className={styles.aside_item}>
             <img src={path} alt=""></img>
             <div className={styles.item_info}>
+
                 <p>{title}</p>
-                <div>
-                    <span>{size}</span>
-                    <span> - </span>
+
+                <div className={styles.itemDescription}>
+                    <span className={styles.sizing}>{size}</span>
+                    <span>-</span>
                     <div className={`${styles[color]}`}>
                         <div></div>
                     </div>

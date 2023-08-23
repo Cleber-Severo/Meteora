@@ -19,13 +19,14 @@
 }
 
 .aside_item div.item_info {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }
 
 .aside_item div.item_info p {
   font-weight: 600;
+  color: #262626;
 }
 
 .aside_item div.itemDescription {
@@ -33,27 +34,39 @@
   align-items: center;
 }
 
-.aside_item div.item_info div:not(:last-child) {
+.aside_item div.itemDescription .sizing {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #262626;
+
+  text-align: center;
+}
+
+.aside_item div.item_info div {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
 .aside_item div.quantity {
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
 
-    margin-top: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    width: 50px;
+  margin-top: 4px;
+
+  width: 50px;
+}
+
+.aside_item div.quantity {
+  margin-left: auto;
 }
 
 .aside_item div.quantity span:first-child,
 .aside_item div.quantity span:last-child {
-  
   width: 1rem;
   padding: 2px;
   text-align: center;
@@ -66,12 +79,12 @@
 }
 
 .deleteIcon {
-    color:  #ff6666;
-    padding-right: .5rem;
+  color: #ff6666;
+  padding-right: 0.5rem;
 }
 
 .deleteIcon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .black,
@@ -79,19 +92,18 @@
 .lightBlue {
   border: 1px solid #bfbfbf;
   display: inline-block;
-  
-  
+
   width: 24px;
   height: 18px;
 
   padding: 2px;
-  margin-left: 2px;
+  margin-right: 2px;
   box-sizing: border-box;
 }
 
 .black > div,
 .offWhite > div,
-.lightBlue > div{ 
+.lightBlue > div {
   width: 100%;
   height: 100%;
 }
@@ -107,3 +119,8 @@
   background-color: #e6e6e6;
 }
 
+@media screen and (max-width: 768px) {
+  .aside_item > .item_info > p {
+   font-size: .9rem;
+  }
+}

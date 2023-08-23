@@ -15,14 +15,14 @@
 
   box-sizing: border-box;
 
-  width: 320px;
+  width: 350px;
   height: calc(100vh - 84px);
 
   z-index: 20;
 }
 
 .aside.hide {
-  transform: translateX(320px);
+  transform: translateX(350px);
 }
 
 .aside.show {
@@ -107,8 +107,14 @@
 @media screen and (max-width: 768px) {
   .aside {
     height: calc(100vh - 156px);
+    width: 92vw;
   }
   
+.aside.hide {
+  transform: translateX(92vw);
+}
+
+
   .cartIcon {
     top: 10rem;
 
