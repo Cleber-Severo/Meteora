@@ -3,7 +3,7 @@ import { FiTrash2 } from "react-icons/fi";
 import styles from './AsideItem.module.css'
 import { useCartContext } from "../../../context/Cart";
 
-const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quantity, size }) => {
+const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quantity, size, color }) => {
     
     const { addProduct, removeProduct, deleteProduct } = useCartContext();
 
@@ -15,6 +15,7 @@ const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quan
 
                 <div className={styles.itemDescription}>
                     <span>{size}</span>
+                    <span>{color}</span>
                     <span> - </span>
                     <span>R${pricing}</span>
                 </div>
