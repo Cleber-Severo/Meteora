@@ -39,7 +39,6 @@ export function useCartContext() {
 
         if (!alreadyAdded) {
             newPoduct.quantity = 1;
-            console.log('not new');
             return setCart(previousCart =>
                 [...previousCart, newPoduct])
         }

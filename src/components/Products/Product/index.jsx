@@ -1,6 +1,5 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -8,7 +7,9 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import Typography from '@mui/material/Typography';
+import Snackbar from '@mui/material/Snackbar';
+import Grow from '@mui/material/Slide';
+
 
 
 import styles from './Product.module.css'
@@ -16,6 +17,10 @@ import MeteoraBtn from '../../MeteoraBtn'
 import ProductModalColorSize from '../ProductModalColorSize';
 import { useCartContext } from '../../../context/Cart';
 import { useState } from 'react';
+
+function GrowTransition(props) {
+    return <Grow {...props} />;
+}
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -59,17 +64,30 @@ BootstrapDialogTitle.propTypes = {
 export const Product = ({ path, title, pricing, description, screen, id, cartItemId, setCartItemId }) => {
 
     const [open, setOpen] = React.useState(false);
-    const { addProduct } = useCartContext()
-
+    const [openSnack, setOpenSnack] = React.useState(false);
+    
     const [color, setColor] = useState("");
     const [size, setSize] = useState("");
     const [productFormErr, setProductFormErr] = useState('valid');
+
+    const [vertical, setverical] = React.useState('bottom');
+    const [horizontal, setHorizontal] = useState('center');
+    const [transitionSnack, setTransitionSnack] = useState({ Transition: GrowTransition } )
+
+    const { addProduct } = useCartContext()
 
     const handleClickOpen = () => {
         setOpen(true);
     };
     const handleClose = () => {
         setOpen(false);
+    };
+
+    const handleClickOpenSnack = () => {
+        setOpenSnack(true);
+    };
+    const handleCloseSnack = () => {
+        setOpenSnack(false);
     };
 
     function validateProductForm(e) {
@@ -84,7 +102,8 @@ export const Product = ({ path, title, pricing, description, screen, id, cartIte
         setCartItemId(cartItemId+1)
         setColor("")
         setSize("")
-
+        handleClose()
+        handleClickOpenSnack()
     }
 
     return (
@@ -139,6 +158,15 @@ export const Product = ({ path, title, pricing, description, screen, id, cartIte
                 </DialogContent>
 
             </BootstrapDialog>
+
+            <Snackbar
+                open={openSnack}
+                autoHideDuration={1500}
+                onClose={handleCloseSnack}
+                anchorOrigin={{ vertical, horizontal }}
+                message="Produto adicionado a sacola!"
+                TransitionComponent={transitionSnack.Transition}
+            />
         </article>
     )
 }
