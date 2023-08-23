@@ -1,10 +1,10 @@
-import { FiTrash2 } from "react-icons/fi";
+import { FaRegTrashAlt } from "react-icons/fa";
 
 import styles from './AsideItem.module.css'
 import { useCartContext } from "../../../context/Cart";
 
 const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quantity, size, color }) => {
-    
+
     const { addProduct, removeProduct, deleteProduct } = useCartContext();
 
     return (
@@ -12,23 +12,27 @@ const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quan
             <img src={path} alt=""></img>
             <div className={styles.item_info}>
                 <p>{title}</p>
+                <div>
+                    <span>{size}</span>
+                    <span> - </span>
+                    <div className={`${styles[color]}`}>
+                        <div></div>
+                    </div>
+                </div>
 
                 <div className={styles.itemDescription}>
-                    <span>{size}</span>
-                    <span>{color}</span>
-                    <span> - </span>
                     <span>R${pricing}</span>
-                </div>
-                <div className={styles.quantity}>
-                    <span onClick={() => removeProduct(cartItemId) } >-</span>
-                    <span>{quantity}</span>
-                    <span onClick={() => { addProduct({ path, title, pricing, description, screen, cartItemId }) }} >+</span>
+                    <div className={styles.quantity}>
+                        <span onClick={() => removeProduct(cartItemId)} >-</span>
+                        <span>{quantity}</span>
+                        <span onClick={() => { addProduct({ path, title, pricing, description, screen, cartItemId }) }} >+</span>
+                    </div>
                 </div>
 
             </div>
-            <FiTrash2 
+            <FaRegTrashAlt
                 className={styles.deleteIcon}
-                onClick={() => { deleteProduct(cartItemId) } }
+                onClick={() => { deleteProduct(cartItemId) }}
             />
         </article>
     )

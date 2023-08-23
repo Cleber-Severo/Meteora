@@ -28,6 +28,17 @@
   font-weight: 600;
 }
 
+.aside_item div.itemDescription {
+  display: flex;
+  align-items: center;
+}
+
+.aside_item div.item_info div:not(:last-child) {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .aside_item div.quantity {
     border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
@@ -62,3 +73,37 @@
 .deleteIcon:hover {
     cursor: pointer;
 }
+
+.black,
+.offWhite,
+.lightBlue {
+  border: 1px solid #bfbfbf;
+  display: inline-block;
+  
+  
+  width: 24px;
+  height: 18px;
+
+  padding: 2px;
+  margin-left: 2px;
+  box-sizing: border-box;
+}
+
+.black > div,
+.offWhite > div,
+.lightBlue > div{ 
+  width: 100%;
+  height: 100%;
+}
+
+.black > div {
+  background-color: black;
+}
+
+.lightBlue > div {
+  background-color: lightblue;
+}
+.offWhite > div {
+  background-color: #e6e6e6;
+}
+
