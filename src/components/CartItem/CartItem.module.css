@@ -1,7 +1,27 @@
+.cartItem {
+  display: flex;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+.cartItem img {
+  width: 150;
+  height: 150px;
+
+  object-fit: contain;
+}
+
+.cartItem div p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .black,
 .offWhite,
 .lightBlue {
   border: 1px solid #bfbfbf;
+  border-radius: 4px;
   display: inline-block;
 
   width: 24px;
@@ -9,6 +29,8 @@
 
   padding: 2px;
   margin-right: 2px;
+  margin-left: .5rem;
+
   box-sizing: border-box;
 }
 
@@ -28,4 +50,32 @@
 }
 .offWhite > div {
   background-color: #e6e6e6;
+}
+
+.itemDescription,
+.itemDescription > span {
+  display: flex;
+  align-items: center;
+}
+
+.itemDescription {
+  gap: 1rem;
+}
+
+.quantity {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 4px;
+
+  width: 50px;
+}
+
+.quantity span:first-child,
+.quantity span:last-child {
+  cursor: pointer;
 }

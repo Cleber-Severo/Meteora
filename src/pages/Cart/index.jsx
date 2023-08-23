@@ -8,9 +8,9 @@ const Cart = () => {
 
   return (
     <section className={styles.cart}>
-      <div>
-        Carrinho
-      </div>
+      <h2>
+        Carrinho: {qtdProducts} {qtdProducts === 1 ? 'item' : 'itens'}
+      </h2>
       <div className={styles.content}>
         {cart.map(item => <CartItem key={item.cartItemId} {...item} /> ) }
       </div>
