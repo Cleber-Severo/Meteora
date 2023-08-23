@@ -48,7 +48,7 @@ const ProductModalColorSize = ({ setColor, setSize, productFormErr }) => {
           </div>
         </div>
       </div >
-      <span className={styles[productFormErr]}>**preencha cor e tamanho</span>
+      <span className={styles[productFormErr]}>*Selecione cor e tamanho</span>
     </div >
   )
 }
