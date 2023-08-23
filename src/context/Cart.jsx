@@ -5,12 +5,15 @@ CartContext.displayName = "Cart";
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
-    const [qtdProducts, setQtdProducts] = useState(0)
+    const [cartItemId, setCartItemId] = useState(0);
+    const [qtdProducts, setQtdProducts] = useState(0);
     return (
         <CartContext.Provider
             value={{
                 cart,
                 setCart,
+                cartItemId,
+                setCartItemId,
                 qtdProducts,
                 setQtdProducts
             }} >
@@ -24,7 +27,9 @@ export function useCartContext() {
         cart,
         setCart,
         qtdProducts,
-        setQtdProducts
+        setQtdProducts,
+        cartItemId,
+        setCartItemId
     } = useContext(CartContext);
 
     function changeQuantity(id, quantity) {
@@ -34,16 +39,48 @@ export function useCartContext() {
         })
     }
 
+    function doesProductExist(product) {
+
+        const alreadyExist = cart.some(cartItem => {
+            //console.log(cartItem.title);
+            console.log(product.title);
+            if (cartItem.title == product.title && cartItem.size == product.size && cartItem.color == product.color) {
+                return cartItem;
+            }
+        })
+        console.log(alreadyExist);
+
+        return alreadyExist;
+
+        // console.log(alreadyExist);
+        // if (!alreadyExist) {
+        //     console.log(product);
+        //     //addProduct(product);
+        //     product.quantity = 1;
+        //     return setCart(previousCart =>
+        //         [...previousCart, product])
+        // }
+
+        // setCart(changeQuantity(product.cartItemId, 1))
+    }
+
     function addProduct(newPoduct) {
-        const alreadyAdded = cart.some(cartItem => cartItem.cartItemId === newPoduct.cartItemId )
+        const alreadyAdded = cart.some(cartItem => (cartItem.title == newPoduct.title && cartItem.size == newPoduct.size && cartItem.color == newPoduct.color))
+        const productAlreadyAdded = cart.filter(cartItem => (cartItem.title == newPoduct.title && cartItem.size == newPoduct.size && cartItem.color == newPoduct.color))
 
         if (!alreadyAdded) {
             newPoduct.quantity = 1;
-            return setCart(previousCart =>
-                [...previousCart, newPoduct])
+            return (
+                setCart(previousCart =>
+                    [...previousCart, newPoduct]),
+                setCartItemId(cartItemId + 1)
+            )
         }
+
+        newPoduct.cartItemId = productAlreadyAdded[0].cartItemId;
         setCart(changeQuantity(newPoduct.cartItemId, 1))
     }
+
 
     function removeProduct(id) {
         const product = cart.find(cartItem => cartItem.cartItemId === id);
@@ -56,9 +93,9 @@ export function useCartContext() {
     }
 
     function deleteProduct(id, size) {
-        const removedItem = cart.find(cartItem => cartItem.cartItemId === id )
+        const removedItem = cart.find(cartItem => cartItem.cartItemId === id)
 
-        return setCart(newCart => newCart.filter(cartItem => cartItem.cartItemId !== removedItem.cartItemId ))
+        return setCart(newCart => newCart.filter(cartItem => cartItem.cartItemId !== removedItem.cartItemId))
     }
 
     useEffect(() => {
@@ -69,9 +106,12 @@ export function useCartContext() {
     return {
         cart,
         setCart,
+        cartItemId,
+        setCartItemId,
         addProduct,
         removeProduct,
         qtdProducts,
-        deleteProduct
+        deleteProduct,
+        doesProductExist
     }
 }

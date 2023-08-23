@@ -24,7 +24,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 const AsideCart = () => {
     const [asideToggle, setAsideToggle] = useState(false);
     const { cart, qtdProducts } = useCartContext();
-    
     useEffect( () => { 
         if(qtdProducts == 0) setAsideToggle(false)
      }, [qtdProducts] )
@@ -43,8 +42,8 @@ const AsideCart = () => {
                         />
                     </div>
                     <div className={styles.aside_content}>
-
-                        {   
+                        {
+                          
                             cart.map(product => (<AsideItem key={product.cartItemId} {...product} />))
                         }
                     </div>

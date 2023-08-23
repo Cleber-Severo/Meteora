@@ -61,7 +61,7 @@ BootstrapDialogTitle.propTypes = {
 };
 
 
-export const Product = ({ path, title, pricing, description, screen, id, cartItemId, setCartItemId }) => {
+export const Product = ({ path, title, pricing, description, screen }) => {
 
     const [open, setOpen] = React.useState(false);
     const [openSnack, setOpenSnack] = React.useState(false);
@@ -74,7 +74,7 @@ export const Product = ({ path, title, pricing, description, screen, id, cartIte
     const [horizontal, setHorizontal] = useState('center');
     const [transitionSnack, setTransitionSnack] = useState({ Transition: GrowTransition } )
 
-    const { addProduct } = useCartContext()
+    const { addProduct, doesProductExist, cartItemId, setCartItemId } = useCartContext()
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -98,12 +98,14 @@ export const Product = ({ path, title, pricing, description, screen, id, cartIte
             setTimeout(() => { setProductFormErr('valid') }, 2500)
             return;
         }
-        addProduct({ path, title, pricing, description, screen, cartItemId, color,size });
-        setCartItemId(cartItemId+1)
+        
+    
+        addProduct({ path, title, pricing, description, screen, cartItemId, color, size })
         setColor("")
         setSize("")
         handleClose()
         handleClickOpenSnack()
+        
     }
 
     return (

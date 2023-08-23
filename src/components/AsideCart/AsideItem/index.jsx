@@ -27,7 +27,7 @@ const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quan
                     <div className={styles.quantity}>
                         <span onClick={() => removeProduct(cartItemId)} >-</span>
                         <span>{quantity}</span>
-                        <span onClick={() => { addProduct({ path, title, pricing, description, screen, cartItemId }) }} >+</span>
+                        <span onClick={() => { addProduct({ path, title, pricing, description, screen, cartItemId, color, size }) }} >+</span>
                     </div>
                 </div>
 
