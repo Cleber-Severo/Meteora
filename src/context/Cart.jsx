@@ -7,6 +7,7 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const [cartItemId, setCartItemId] = useState(0);
     const [qtdProducts, setQtdProducts] = useState(0);
+    const [totalValueCart, setTotalValueCart] = useState(0);
     return (
         <CartContext.Provider
             value={{
@@ -15,7 +16,9 @@ export const CartProvider = ({ children }) => {
                 cartItemId,
                 setCartItemId,
                 qtdProducts,
-                setQtdProducts
+                setQtdProducts,
+                totalValueCart,
+                setTotalValueCart
             }} >
             {children}
         </CartContext.Provider>
@@ -29,7 +32,9 @@ export function useCartContext() {
         qtdProducts,
         setQtdProducts,
         cartItemId,
-        setCartItemId
+        setCartItemId,
+        totalValueCart,
+        setTotalValueCart
     } = useContext(CartContext);
 
     function changeQuantity(id, quantity) {
@@ -37,31 +42,6 @@ export function useCartContext() {
             if (cartItem.cartItemId === id) cartItem.quantity += quantity;
             return cartItem
         })
-    }
-
-    function doesProductExist(product) {
-
-        const alreadyExist = cart.some(cartItem => {
-            //console.log(cartItem.title);
-            console.log(product.title);
-            if (cartItem.title == product.title && cartItem.size == product.size && cartItem.color == product.color) {
-                return cartItem;
-            }
-        })
-        console.log(alreadyExist);
-
-        return alreadyExist;
-
-        // console.log(alreadyExist);
-        // if (!alreadyExist) {
-        //     console.log(product);
-        //     //addProduct(product);
-        //     product.quantity = 1;
-        //     return setCart(previousCart =>
-        //         [...previousCart, product])
-        // }
-
-        // setCart(changeQuantity(product.cartItemId, 1))
     }
 
     function addProduct(newPoduct) {
@@ -92,16 +72,32 @@ export function useCartContext() {
         setCart(changeQuantity(id, -1))
     }
 
-    function deleteProduct(id, size) {
+    function deleteProduct(id) {
         const removedItem = cart.find(cartItem => cartItem.cartItemId === id)
 
         return setCart(newCart => newCart.filter(cartItem => cartItem.cartItemId !== removedItem.cartItemId))
     }
 
+    function convertStringToNum(price) {
+        const priceArr = price.split(",")
+        const numArr = priceArr.map(item => Number(item));
+
+        return (numArr[0] + numArr[1] / 100).toFixed(2)
+    }
+
     useEffect(() => {
-        const newQtdProducts = cart.reduce((counter, product) => counter + product.quantity, 0);
+        const { newTotalValue, newQtdProducts } = cart.reduce((counter, product) =>
+        ({
+            newQtdProducts: counter.newQtdProducts + product.quantity,
+            newTotalValue: counter.newTotalValue + (convertStringToNum(product.pricing) * product.quantity)
+        }), {
+            newQtdProducts: 0,
+            newTotalValue: 0
+        });
         setQtdProducts(newQtdProducts)
-    }, [cart, setQtdProducts])
+        setTotalValueCart(newTotalValue)
+    }, [cart, setQtdProducts, setTotalValueCart])
+
 
     return {
         cart,
@@ -112,6 +108,6 @@ export function useCartContext() {
         removeProduct,
         qtdProducts,
         deleteProduct,
-        doesProductExist
+        totalValueCart
     }
 }

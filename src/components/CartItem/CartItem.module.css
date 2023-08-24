@@ -6,8 +6,8 @@
 }
 
 .cartItem img {
-  width: 150;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 
   object-fit: contain;
 }
