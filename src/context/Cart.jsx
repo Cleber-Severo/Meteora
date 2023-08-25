@@ -78,11 +78,14 @@ export function useCartContext() {
         return setCart(newCart => newCart.filter(cartItem => cartItem.cartItemId !== removedItem.cartItemId))
     }
 
+
+    //converts price string to a number 
     function convertStringToNum(price) {
         const priceArr = price.split(",")
         const numArr = priceArr.map(item => Number(item));
 
-        return (numArr[0] + numArr[1] / 100).toFixed(2)
+        return (numArr[0] + (numArr[1] / 100)).toFixed(2)
+        
     }
 
     useEffect(() => {
