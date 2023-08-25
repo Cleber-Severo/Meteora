@@ -15,11 +15,11 @@ const Cart = () => {
         <div className={styles.contentItem}>
           {cart.map(item => <CartItem key={item.cartItemId} {...item} />)}
         </div>
-        <div className={styles.contentItem}>
+      </div>
+      <div className={styles.cartFooter}>
+        <div className={styles.total}>
           Total: R$ {totalValueCart.toFixed(2)}
         </div>
-      </div>
-      <div>
         <button>Finalizar compra</button>
         <button>Continuar comprando</button>
       </div>
