@@ -11,18 +11,20 @@ const Cart = () => {
       <h2>
         Carrinho: {qtdProducts} {qtdProducts === 1 ? 'item' : 'itens'}
       </h2>
-      <div className={styles.content}>
-        <div className={styles.contentItem}>
-          {cart.map(item => <CartItem key={item.cartItemId} {...item} />)}
+      <div className={styles.wrapper}>
+        <div className={styles.content}>
+          <div className={styles.contentItem}>
+            {cart.map(item => <CartItem key={item.cartItemId} {...item} />)}
+          </div>
         </div>
       </div>
-      <div className={styles.cartFooter}>
-        <div className={styles.total}>
-          Total: R$ {totalValueCart.toFixed(2)}
-        </div>
+        <div className={styles.cartFooter}>
+          <div className={styles.total}>
+            Total: R$ {totalValueCart.toFixed(2)}
+          </div>
         <button>Finalizar compra</button>
         <button>Continuar comprando</button>
-      </div>
+        </div>
     </section>
   )
 }
