@@ -1,3 +1,18 @@
 .app_wrapper {
     position: relative;
 }
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar-track {
+    background: #e6e6e6;
+}
+
+body::-webkit-scrollbar-thumb {
+    border: none;
+    background-color: #b3b3b3;
+}
