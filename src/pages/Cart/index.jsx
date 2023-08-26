@@ -2,15 +2,23 @@ import React from 'react'
 import styles from './Cart.module.css'
 import CartItem from '../../components/CartItem';
 import { useCartContext } from '../../context/Cart';
+import MeteoraBtn from '/src/components/MeteoraBtn'
+
 
 const Cart = () => {
   const { cart, qtdProducts, totalValueCart } = useCartContext();
 
   return (
     <section className={styles.cart}>
-      <h2>
-        Carrinho: {qtdProducts} {qtdProducts === 1 ? 'item' : 'itens'}
-      </h2>
+      <div className={styles.cartHeader}>
+        <h2>
+          Carrinho: {qtdProducts} {qtdProducts === 1 ? 'item' : 'itens'}
+        </h2>
+        <MeteoraBtn>
+          <button>Continuar comprando</button>
+        </MeteoraBtn>
+      </div>
+      
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <div className={styles.contentItem}>
@@ -18,13 +26,14 @@ const Cart = () => {
           </div>
         </div>
       </div>
-        <div className={styles.cartFooter}>
-          <div className={styles.total}>
-            Total: R$ {totalValueCart.toFixed(2)}
-          </div>
-        <button>Finalizar compra</button>
-        <button>Continuar comprando</button>
+      <div className={styles.cartFooter}>
+        <div className={styles.total}>
+          <b>Total:</b> R$ {totalValueCart.toFixed(2)}
         </div>
+        <MeteoraBtn>
+          <button>Finalizar compra</button>
+        </MeteoraBtn>
+      </div>
     </section>
   )
 }
