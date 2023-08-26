@@ -18,7 +18,7 @@ const Cart = () => {
           <button>Continuar comprando</button>
         </MeteoraBtn>
       </div>
-      
+
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <div className={styles.contentItem}>
@@ -26,6 +26,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
+      
       <div className={styles.cartFooter}>
         <div className={styles.total}>
           <b>Total:</b> R$ {totalValueCart.toFixed(2)}

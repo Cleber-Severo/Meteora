@@ -1,7 +1,4 @@
 .cart {
-  padding: 2rem;
-  box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,17 +7,21 @@
   width: 100%;
   height: calc(100vh - 54px - 84px);
 
+  padding: 2rem;
+  box-sizing: border-box;
+
   overflow: auto;
 }
 
-.cartHeader, .cartFooter {
+.cartHeader,
+.cartFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   width: 60%;
 
-  padding: 0 .6rem;
+  padding: 0 0.6rem;
   box-sizing: border-box;
 }
 
@@ -30,7 +31,6 @@
 
 .cartHeader > h2 {
   color: rgb(50, 50, 50);
-  margin-bottom: 1rem;
 }
 
 .content {
@@ -54,35 +54,90 @@
   padding: 1rem 0;
 }
 
-
 .content::-webkit-scrollbar {
-    width: 8px;
-    transform: translateX(30px);
-    opacity: 0;
-    box-sizing: border-box;
+  width: 8px;
+  transform: translateX(30px);
+  opacity: 0;
+  box-sizing: border-box;
 }
 
 .content::-webkit-scrollbar-track {
-    background: #e6e6e6;
-    opacity: 0.6;
-    z-index: -1;
+  background: #e6e6e6;
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .content::-webkit-scrollbar-thumb {
-    /* background-color: var(--secondary); */
-    /* border-radius: 12px; */
-    border-radius: 5px;
-    border: 3px solid var(--primary);
-    background-color: #bfbfbf
+  /* background-color: var(--secondary); */
+  /* border-radius: 12px; */
+  border-radius: 5px;
+  border: 3px solid var(--primary);
+  background-color: #bfbfbf;
 }
-
-
 
 .cartFooter button {
   justify-self: end;
 }
 .total {
-  font-size: 1.3rem;
   color: rgb(50, 50, 50);
+  font-size: 1.3rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1440px) {
+  .cart {
+    gap: 0.5rem;
+
+    width: 100%;
+    height: calc(100vh - 30px);
+
+    padding: 0.6rem;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    
+    height: 90%;
+    width: 70%;
+
+    padding: 1rem 0;
+  }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+  .cart {
+    height: calc(100vh - 84px - 50px);
+
+    padding: 2rem 0;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cart {
+    height: calc(100vh - 72px - 64px - 74px);
+
+    padding: .8rem 0;
+    overflow: hidden;
+  }
+
+  .cartHeader, .cartFooter {
+    width: 95%;
+  }
+
+  .cartHeader > h2 {
+font-size: 1rem;
+}
+
+
+  .wrapper {
+    height: 80%;
+    width: 98%;
+  }
 }
