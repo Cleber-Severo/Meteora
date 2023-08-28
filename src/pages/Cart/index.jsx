@@ -1,12 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Cart.module.css'
 import CartItem from '../../components/CartItem';
 import { useCartContext } from '../../context/Cart';
 import MeteoraBtn from '/src/components/MeteoraBtn'
+import { Link, useNavigate } from 'react-router-dom';
+import { Snackbar } from '@mui/material';
 
 
 const Cart = () => {
-  const { cart, qtdProducts, totalValueCart } = useCartContext();
+  const { cart, setCart, qtdProducts, totalValueCart } = useCartContext();
+  const navigate = useNavigate();
+
+  const [openSnack, setOpenSnack] = useState(false);
+  const [vertical, setverical] = React.useState('top');
+  const [horizontal, setHorizontal] = useState('center');
+
+  const handleClickOpenSnack = () => {
+    setOpenSnack(true);
+  };
+  const handleCloseSnack = () => {
+    setOpenSnack(false);
+  };
+
+  function endShopiing() {
+    handleClickOpenSnack()
+    setCart([])
+    setTimeout(() =>{
+      navigate(-1)
+    }, 2000)
+  }
 
   return (
     <section className={styles.cart}>
@@ -15,7 +37,7 @@ const Cart = () => {
           Carrinho: {qtdProducts} {qtdProducts === 1 ? 'item' : 'itens'}
         </h2>
         <MeteoraBtn>
-          <button>Continuar comprando</button>
+          <button onClick={() => navigate(-1)} >Continuar comprando</button>
         </MeteoraBtn>
       </div>
 
@@ -26,15 +48,29 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      
+
       <div className={styles.cartFooter}>
         <div className={styles.total}>
           <b>Total:</b> R$ {totalValueCart.toFixed(2)}
         </div>
-        <MeteoraBtn>
-          <button>Finalizar compra</button>
-        </MeteoraBtn>
+      
+          <MeteoraBtn>
+          <button 
+            onClick={endShopiing} 
+          >
+            Finalizar compra
+          </button>
+          </MeteoraBtn>
       </div>
+
+      <Snackbar
+        open={openSnack}
+        autoHideDuration={1500}
+        onClose={handleCloseSnack}
+        anchorOrigin={{ vertical, horizontal }}
+        message="Compra finallizada!"
+       
+      />
     </section>
   )
 }
