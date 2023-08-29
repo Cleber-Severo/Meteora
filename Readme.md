@@ -27,7 +27,7 @@ O projeto foi feito com React, CSS Modules, contando com as melhores práticas b
 ### Obrigado por visitar o Meteora!
 
 en
-## This is an E-Commerce personal project based on the alura challenge 7th edition
+### This is an E-Commerce personal project based on the alura challenge 7th edition
 
 ## Introduction
 
