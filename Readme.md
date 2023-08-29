@@ -1,5 +1,6 @@
 # Meteora
-[PT-BR]
+
+pt-br
 ### Este é um projeto pessoal de E-commerce baseado no Alura Challenge 7ª Edição
 
 [<img width=80% textAlign="center" src="./public/Images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
@@ -25,7 +26,7 @@ O projeto foi feito com React, CSS Modules, contando com as melhores práticas b
 
 ### Obrigado por visitar o Meteora!
 
-[EN]
+en
 ## This is an E-Commerce personal project based on the alura challenge 7th edition
 
 ## Introduction
@@ -46,7 +47,7 @@ O projeto foi feito com React, CSS Modules, contando com as melhores práticas b
 - Cart aside screen showing the added items description
 - Checkout page with all cart items and the total value to the shopping.
 
-## Thank you for having a look on Meteora project
+### Thank you for having a look on Meteora! 
 
 [<img width=80% textAlign="center" src="./public/Images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
 
