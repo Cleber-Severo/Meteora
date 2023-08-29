@@ -52,8 +52,7 @@ Thank you for having a look on Meteora project, this is an E-Commerce personal p
 
 <img  height=500 width=30% textAlign="center" src="./public/Images/screenshots/homepage_mobile.png" alt="mobile">
 
-## Installation 
-    To install the app locally, clone the app, make sure you have node Installed and follow the instructions bellow to run de dependences:
+## Installation:
 
     - set jsxconfig.json "baseUrl": "src"
     - npm install
