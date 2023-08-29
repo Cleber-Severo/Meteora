@@ -70,6 +70,7 @@
   width: 1rem;
   padding: 2px;
   text-align: center;
+  user-select: none;
 }
 
 .aside_item div.quantity span:first-child:hover,
@@ -121,6 +122,6 @@
 
 @media screen and (max-width: 768px) {
   .aside_item > .item_info > p {
-   font-size: .9rem;
+    font-size: 0.9rem;
   }
 }

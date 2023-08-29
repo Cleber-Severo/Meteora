@@ -6,7 +6,7 @@ import MeteoraDeleteIcon from '../MeteoraDeleteIcon';
 
 
 const CartItem = ({ path, title, pricing, description, screen, cartItemId, quantity, size, color }) => {
-  const { addProduct, removeProduct, deleteProduct } = useCartContext();
+  const { addProduct, removeProduct, convertStringToNum } = useCartContext();
 
   return (
     <article className={styles.cartItem}>
@@ -26,21 +26,26 @@ const CartItem = ({ path, title, pricing, description, screen, cartItemId, quant
         </div>
 
         <div className={`${styles.itemDescription} ${styles.itemDescriptionFinal}`}>
-          <span>R${pricing*quantity}</span>
+          
           <div className={styles.quantity}>
             <span onClick={() => removeProduct(cartItemId)} >-</span>
             <span>{quantity}</span>
             <span onClick={() => { addProduct({ path, title, pricing, description, screen, cartItemId, color, size }) }} >+</span>
           </div>
+
+          <div className={styles.delete}>
+            <MeteoraDeleteIcon cartItemId={cartItemId} />
+          </div>
+          {/* <span>R$ {pricing}</span> */}
           {/* <FaRegTrashAlt
             className={styles.deleteIcon}
             onClick={() => { deleteProduct(cartItemId) }}
           /> */}
-          <MeteoraDeleteIcon cartItemId={cartItemId} />
         </div>
+          <span className={styles.subtotal}>Subtotal: R${(convertStringToNum(pricing) * quantity).toFixed(2)}</span>
       </div>
-      <div className={styles.itemDescription}>
-        </div>
+      
+      
 
     </article>
   )

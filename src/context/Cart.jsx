@@ -85,7 +85,7 @@ export function useCartContext() {
         const numArr = priceArr.map(item => Number(item));
 
         return (numArr[0] + (numArr[1] / 100)).toFixed(2)
-        
+
     }
 
     useEffect(() => {
@@ -111,6 +111,7 @@ export function useCartContext() {
         removeProduct,
         qtdProducts,
         deleteProduct,
-        totalValueCart
+        totalValueCart,
+        convertStringToNum
     }
 }
