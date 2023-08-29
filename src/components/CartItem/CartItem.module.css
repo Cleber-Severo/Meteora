@@ -62,6 +62,14 @@
   gap: 1rem;
 }
 
+.itemDescription:not(:last-child){
+  margin-top: .2rem;
+}
+
+.itemDescription:last-child {
+  justify-content: space-between;
+  margin-top: 1rem;
+}
 .quantity {
   border: 1px solid rgb(204, 204, 204);
   border-radius: 4px;

@@ -2,6 +2,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 
 import styles from './AsideItem.module.css'
 import { useCartContext } from "../../../context/Cart";
+import MeteoraDeleteIcon from "../../MeteoraDeleteIcon";
 
 const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quantity, size, color }) => {
 
@@ -32,10 +33,8 @@ const AsideItem = ({ path, title, pricing, description, screen, cartItemId, quan
                 </div>
 
             </div>
-            <FaRegTrashAlt
-                className={styles.deleteIcon}
-                onClick={() => { deleteProduct(cartItemId) }}
-            />
+
+            <MeteoraDeleteIcon cartItemId={cartItemId} />
         </article>
     )
 }

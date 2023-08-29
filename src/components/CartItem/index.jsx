@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './CartItem.module.css'
 import { useCartContext } from '../../context/Cart';
 import { FaRegTrashAlt } from "react-icons/fa";
+import MeteoraDeleteIcon from '../MeteoraDeleteIcon';
 
 
 const CartItem = ({ path, title, pricing, description, screen, cartItemId, quantity, size, color }) => {
@@ -24,20 +25,22 @@ const CartItem = ({ path, title, pricing, description, screen, cartItemId, quant
           </span>
         </div>
 
-        <div className={styles.itemDescription}>
-          <span>R${pricing}</span>
+        <div className={`${styles.itemDescription} ${styles.itemDescriptionFinal}`}>
+          <span>R${pricing*quantity}</span>
           <div className={styles.quantity}>
             <span onClick={() => removeProduct(cartItemId)} >-</span>
             <span>{quantity}</span>
             <span onClick={() => { addProduct({ path, title, pricing, description, screen, cartItemId, color, size }) }} >+</span>
           </div>
-          <FaRegTrashAlt
+          {/* <FaRegTrashAlt
             className={styles.deleteIcon}
             onClick={() => { deleteProduct(cartItemId) }}
-          />
+          /> */}
+          <MeteoraDeleteIcon cartItemId={cartItemId} />
         </div>
-
       </div>
+      <div className={styles.itemDescription}>
+        </div>
 
     </article>
   )
