@@ -14,7 +14,7 @@ O projeto foi feito com React, CSS Modules, contando com as melhores práticas b
 
 ### Principais funcionalidades:
 
-- Navegação suave entre as poaginas com o Single page application
+- Navegação suave entre as páginas com o Single page application
 - Banners dinamicos com carrosel do Swiper JS
 - Lista de procutos gerada dinamicamente a partir dos dados de uma API
 - Filtro de itens por categorias e por campo de pesquisa
