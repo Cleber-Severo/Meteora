@@ -55,7 +55,7 @@ Thank you for having a look on Meteora project, this is an E-Commerce personal p
 ## Installation 
     To install the app locally, clone the app, make sure you have node Installed and follow the instructions bellow to run de dependences:
 
-    - set jsxconfig.json "baseUrl": "src",
+    - set jsxconfig.json "baseUrl": "src"
     - npm install
     - npm install react-router-dom
     - npm install react-icons --save
