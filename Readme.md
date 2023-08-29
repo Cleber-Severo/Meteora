@@ -1,15 +1,15 @@
 # Meteora
-
+[PT-BR]
 ### Este é um projeto pessoal de E-commerce baseado no Alura Challenge 7ª Edição
 
 [<img width=80% textAlign="center" src="./public/Images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
 
 
-## [PT-BR] Introdução
+## Introdução
 
-Este é um projeto E-commerce, uma Single Page Application com diversos features feito em ReactJs garantindo uma ótima experiencia de usuário e com diversas boas práticas do desenvolvimento web e pode ser acessado pelo [link](https://meteora-9lmj.vercel.app)
+    Este é um projeto E-commerce, uma Single Page Application com diversos features feito em ReactJs garantindo uma ótima experiencia de usuário e com diversas boas práticas do desenvolvimento web e pode ser acessado pelo [link](https://meteora-9lmj.vercel.app)
 
-O projeto foi feito com React, CSS Modules, contando com as melhores práticas buscando performace, bons visuais e layout totalmente responsivo. As principais ferramentas utilizadas são: React Js, CSS Modules, leitura de dados de uma API vinda do Json Server, React-router-dom, React Icons, Context API, Hooks Customizados, useState e useEffect, Componentes do Material UI, carrosel feito com Swiper JS, Figma.
+    O projeto foi feito com React, CSS Modules, contando com as melhores práticas buscando performace, bons visuais e layout totalmente responsivo. As principais ferramentas utilizadas são: React Js, CSS Modules, leitura de dados de uma API vinda do Json Server, React-router-dom, React Icons, Context API, Hooks Customizados, useState e useEffect, Componentes do Material UI, carrosel feito com Swiper JS, Figma.
 
 ### Principais funcionalidades:
 
@@ -25,13 +25,14 @@ O projeto foi feito com React, CSS Modules, contando com as melhores práticas b
 
 ### Obrigado por visitar o Meteora!
 
-## [EN] Introduction
+[EN]
+## This is an E-Commerce personal project based on the alura challenge 7th edition
 
-Thank you for having a look on Meteora project, this is an E-Commerce personal project based on the alura challenge 7th edition
+## Introduction
 
-### This is an E-Commerce project, Single page application with various features built with ReactJs, garanting a good user experience and a lot of good practices on Front-End. It can be accessed on the [link](https://meteora-9lmj.vercel.app)
+ This is an E-Commerce project, Single page application with various features built with ReactJs, garanting a good user experience and a lot of good practices on Front-End. It can be accessed on the [link](https://meteora-9lmj.vercel.app)
 
-### The project has been made with React, Css Modules, having the best practices looking for perfomrmace, good styling and responsive design. The main tools used are: ReactJs, CSS Modules, Fetching API from Json Server, React router dom, React Icons, Context API, Custom Hooks, useState and useEffect, Materail UI components, Banner with Swiper JS and Figma.
+ The project has been made with React, Css Modules, having the best practices looking for perfomrmace, good styling and responsive design. The main tools used are: ReactJs, CSS Modules, Fetching API from Json Server, React router dom, React Icons, Context API, Custom Hooks, useState and useEffect, Materail UI components, Banner with Swiper JS and Figma.
 
 ### Main features:
 
@@ -44,6 +45,8 @@ Thank you for having a look on Meteora project, this is an E-Commerce personal p
 - Validation to all forms (Newsletter and Adding products to the cart)
 - Cart aside screen showing the added items description
 - Checkout page with all cart items and the total value to the shopping.
+
+## Thank you for having a look on Meteora project
 
 [<img width=80% textAlign="center" src="./public/Images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
 
