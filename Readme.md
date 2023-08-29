@@ -50,7 +50,7 @@ Thank you for having a look on Meteora project, this is an E-Commerce personal p
 ## Techs:
  <div style="display: inline_block">
   <img align="center" alt="React" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
- <img align="center" alt="CSS Modules" height="50" width="60" src="https://github.com/css-modules/logos/blob/master/css-modules-logo.png">
+ <img align="center" alt="CSS Modules" height="50" width="60" src="https://github.com/css-modules/logos/blob/master/css-modules-logo.inkscape.svg">
 </div>
 <br>
 
