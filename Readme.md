@@ -1,6 +1,6 @@
 # Meteora
 
-### Obrigado por visitar o Meteora, é um projeto pessoal de E-commerce baseado no Alura Challenge 7ª Edição
+### Este é um projeto pessoal de E-commerce baseado no Alura Challenge 7ª Edição
 
 [<img width=80% textAlign="center" src="./public/Images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
 
@@ -22,6 +22,8 @@ O projeto foi feito com React, CSS Modules, contando com as melhores práticas b
 - Validação de todos os formulários (Newsletter e adicionar produto)
 - Submenu mostrando o resumo dos itens do carrinho
 - Página de checkout com todos os items do carrinho detalhados e valor total da compra
+
+### Obrigado por visitar o Meteora!
 
 ## [EN] Introduction
 
