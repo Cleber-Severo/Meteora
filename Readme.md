@@ -1,8 +1,9 @@
 # Meteora
 
+### Obrigado por visitar o Meteora, é um projeto pessoal de E-commerce baseado no Alura Challenge 7ª Edição
+
 [<img width=80% textAlign="center" src="./public/Images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
 
-###Obrigado por visitar o Meteora, é um projeto pessoal de E-commerce baseado no Alura Challenge 7ª Edição
 
 ## [PT-BR] Introdução
 
