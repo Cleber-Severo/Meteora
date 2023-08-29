@@ -39,13 +39,13 @@ Thank you for having a look on Meteora project, this is an E-Commerce personal p
 - Validation to all forms (Newsletter and Adding products to the cart)
 - Cart aside screen showing the added items description
 - Checkout page with all cart items and the total value to the shopping.
-[<img width=80% textAlign="center" src="./public/images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
+[<img width=80% textAlign="center" src="./images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
 
 ### Cart aside screen
-[<img  height=500 width=30% textAlign="center" src="./public/images/screenshots/asidecart.png" alt="mobile">](https://meteora-9lmj.vercel.app)
+[<img  height=500 width=30% textAlign="center" src="./images/screenshots/asidecart.png" alt="mobile">](https://meteora-9lmj.vercel.app)
 
 ### Mobile screen
-[<img  height=500 width=30% textAlign="center" src="./public/images/screenshots/homepage_mobile.png" alt="mobile">](https://meteora-9lmj.vercel.app)
+[<img  height=500 width=30% textAlign="center" src="./images/screenshots/homepage_mobile.png" alt="mobile">](https://meteora-9lmj.vercel.app)
 
 ## Techs:
  <div style="display: inline_block">
