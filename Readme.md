@@ -43,10 +43,10 @@ Thank you for having a look on Meteora project, this is an E-Commerce personal p
 [<img width=80% textAlign="center" src="./public/Images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
 
 ### Cart aside screen
-[<img  height=500 width=30% textAlign="center" src="./public/Images/screenshots/asidecart.png" alt="mobile">](https://meteora-9lmj.vercel.app)
+[<img  height=500 width=80% textAlign="center" src="./public/Images/screenshots/asidecart.png" alt="mobile">](https://meteora-9lmj.vercel.app)
 
 ### Mobile screen
-[<img  height=500 width=80% textAlign="center" src="./public/Images/screenshots/homepage_mobile.png" alt="mobile">](https://meteora-9lmj.vercel.app)
+[<img  height=500 width=30% textAlign="center" src="./public/Images/screenshots/homepage_mobile.png" alt="mobile">](https://meteora-9lmj.vercel.app)
 
 ## Techs:
  <div style="display: inline_block">
