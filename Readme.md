@@ -7,9 +7,9 @@
 
 ## Introdução
 
-    Este é um projeto E-commerce, uma Single Page Application com diversos features feito em ReactJs garantindo uma ótima experiencia de usuário e com diversas boas práticas do desenvolvimento web e pode ser acessado pelo [link](https://meteora-9lmj.vercel.app)
+Este é um projeto E-commerce, uma Single Page Application com diversos features feito em ReactJs garantindo uma ótima experiencia de usuário e com diversas boas práticas do desenvolvimento web e pode ser acessado pelo [link](https://meteora-9lmj.vercel.app)
 
-    O projeto foi feito com React, CSS Modules, contando com as melhores práticas buscando performace, bons visuais e layout totalmente responsivo. As principais ferramentas utilizadas são: React Js, CSS Modules, leitura de dados de uma API vinda do Json Server, React-router-dom, React Icons, Context API, Hooks Customizados, useState e useEffect, Componentes do Material UI, carrosel feito com Swiper JS, Figma.
+O projeto foi feito com React, CSS Modules, contando com as melhores práticas buscando performace, bons visuais e layout totalmente responsivo. As principais ferramentas utilizadas são: React Js, CSS Modules, leitura de dados de uma API vinda do Json Server, React-router-dom, React Icons, Context API, Hooks Customizados, useState e useEffect, Componentes do Material UI, carrosel feito com Swiper JS, Figma.
 
 ### Principais funcionalidades:
 
