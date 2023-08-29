@@ -57,7 +57,7 @@ Thank you for having a look on Meteora project, this is an E-Commerce personal p
  <div style="display: inline_block">
   <img align="center" alt="React" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
   <img align="center" alt="JavaScript" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg">
-   <img align="center" alt="Mui" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mui/react-original.svg">
+   <img align="center" alt="Mui" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/materialui/materialui-original.svg">
    <img align="center" alt="Css" height="50" width="60" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg">
  <img align="center" backGround="white" alt="CSS Modules" height="50" width="60" src="https://github.com/css-modules/logos/blob/master/css-modules-logo.inkscape.svg">
 </div>
