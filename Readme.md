@@ -1,4 +1,5 @@
 # Meteora
+[<img width=80% textAlign="center" src="./public/Images/screenshots/homepage_desktop.png" alt="desktop">](https://meteora-9lmj.vercel.app)
 
 ## [PT-BR] Introdução
 
@@ -51,7 +52,7 @@ Thank you for having a look on Meteora project, this is an E-Commerce personal p
 ## Techs:
  <div style="display: inline_block">
   <img align="center" alt="React" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
- <img align="center" backGround="white" alt="CSS Modules" height="50" width="60" src="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F3vr72d9jitw21.png">
+ <img align="center" backGround="white" alt="CSS Modules" height="50" width="60" src="https://github.com/css-modules/logos/blob/master/css-modules-logo.inkscape.svg">
 </div>
 <br>
 
